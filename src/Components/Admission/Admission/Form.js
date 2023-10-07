@@ -45,13 +45,16 @@ const Form = () => {
   const [installmentDate2, setInstallmentDate2] = useState("");
   const [address, setAddress] = useState("");
 
+
   const handleImage = (e) => {
     // e.preventDefault();
     setImage(e.target.files[0]);
   };
+  
 
-  const handleSubmit = (e) => {
+  const handleSubmitData = (e) => {
     e.preventDefault();
+    console.log(phone);
 
     const formData = new FormData();
     formData.append("image", image);
@@ -74,12 +77,17 @@ const Form = () => {
     formData.append("installment1Date2", installmentDate2);
     formData.append("address", address);
 
+
+    console.log("hellllooooo",formData.name);
+    
+    console.log("FormData:", formData);
     // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
     axios
       .post("/admission", formData)
       .then((res) => {
         console.log("Form data sent successfully:", res);
         // console.log(formData);
+       
       })
       .catch((error) => {
         console.error("Error sending form data:", error);
@@ -106,6 +114,7 @@ const Form = () => {
               type="text"
               className="contact_input formInputs"
               placeholder="Enter your name"
+              name="name"
               // required="required"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -117,6 +126,7 @@ const Form = () => {
             <h6 className="formLabel">Phone :</h6>
             <input
               type="number"
+              name="phone"
               className="contact_input formInputs"
               placeholder="Enter your Contact Number"
               // required="required"
@@ -129,6 +139,7 @@ const Form = () => {
             <h6 className="formLabel">email :</h6>
             <input
               type="email"
+              name="email"
               className="contact_input formInputs"
               placeholder="Enter your email"
               // required="required"
@@ -165,6 +176,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               value={selectedSubject1}
+              name="subject1"
               onChange={(e) => setSelectedSubject1(e.target.value)}
             >
               <option value="">Subject 1</option>
@@ -187,6 +199,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               value={selectedSubject2}
+              name="subject2"
               onChange={(e) => setSelectedSubject2(e.target.value)}
             >
               <option value="">Subject 2</option>
@@ -209,6 +222,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               value={selectedSubject3}
+              name="subject3"
               onChange={(e) => setSelectedSubject3(e.target.value)}
             >
               <option value="">Subject 3</option>
@@ -234,6 +248,7 @@ const Form = () => {
     placeholder="Eneer Class/Course"
     // required="required"
     value={selectedSubject4}
+    name="subject4"
     onChange={(e) => setSelectedSubject4(e.target.value)}
   >           <option value="">Subject 4</option>
               <option value="English">English</option>
@@ -260,6 +275,7 @@ const Form = () => {
     placeholder="Eneer Class/Course"
     // required="required"
     value={selectedSubject5}
+    name="subject5"
     onChange={(e) => setSelectedSubject5(e.target.value)}
   > 
                  <option value="">Subject 5</option>
@@ -287,6 +303,7 @@ const Form = () => {
     placeholder="Eneer Class/Course"
     // required="required"
     value={selectedSubject6}
+    name="subject6"
     onChange={(e) => setSelectedSubject6(e.target.value)}
   > 
   <option value="">Subject 6</option>
@@ -315,6 +332,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
+              name="course1"
               value={selectedCourse1}
               onChange={(e) => setSelectedCourse1(e.target.value)}
             >
@@ -340,6 +358,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               value={selectedCourse2}
+              name="course2"
               onChange={(e) => setSelectedCourse2(e.target.value)}
             >
               <option value="">Course 2</option>
@@ -360,6 +379,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
+              name="course3"
               value={selectedCourse3}
               onChange={(e) => setSelectedCourse3(e.target.value)}
             >
@@ -383,6 +403,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               value={selectedCourse4}
+              name="course4"
               onChange={(e) => setSelectedCourse4(e.target.value)}
             >
               <option value="">Course 4</option>
@@ -423,6 +444,7 @@ const Form = () => {
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 1"
               // value={installmentInput1}
+              name="installmentInput1"
               onChange={(e) => setInstallmentInput1(e.target.value)}
             />
 
@@ -431,6 +453,7 @@ const Form = () => {
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 2"
               // value={installmentInput2}
+              name="installmentInput2"
               onChange={(e) => setInstallmentInput2(e.target.value)}
             />
             {/* <input type="date" className="course_input courseField  installmentcss" /> */}
@@ -447,11 +470,11 @@ const Form = () => {
           >
             <input type="date" 
              value={installmentDate1}
-             onChange={(e) => setInstallmentDate1(e.target.value)} className="  installmentcss registrationInstallmentInput" />
+             onChange={(e) => setInstallmentDate1(e.target.value)} name="installment1Date1" className="  installmentcss registrationInstallmentInput" />
 
             <input type="date"
               value={installmentDate2}
-              onChange={(e) => setInstallmentDate2(e.target.value)} className=" installmentcss registrationInstallmentInput" />
+              onChange={(e) => setInstallmentDate2(e.target.value)} name="installment1Date2" className=" installmentcss registrationInstallmentInput" />
           </div>
           </div>
 
@@ -474,6 +497,7 @@ const Form = () => {
               placeholder="Enter your Address"
               // required="required"
                value={address}
+               name="address"
               onChange={(e) => setAddress(e.target.value)}
             />
           </div>
@@ -487,6 +511,8 @@ const Form = () => {
               // value={image}
               // placeholder="Phone Number"
               // required="required"
+              name="image"
+              files={image}
               onChange={handleImage}
             />
           </div>
@@ -504,15 +530,14 @@ const Form = () => {
                 <div><input type="text" className="contact_input formInputs" placeholder="Reference If Any" required="required"/></div> */}
 
           {/* <div><textarea className="contact_input contact_textarea formInputs" placeholder="Message"></textarea></div> */}
-          <buttonn type="button"
-          //  onClick={handleImageApi}
-          onClick={handleSubmit}
-            className="contact_button registrationBotton">
-            <span>SUbmit</span>
-            <span className="button_arrow">
-              <i className="fa fa-angle-right" aria-hidden="true"></i>
-            </span>
-          </buttonn>
+          <button type="button" 
+          onClick={handleSubmitData}
+          className="contact_button registrationBotton">
+           <span>Submit</span>
+           <span className="button_arrow">
+            <i className="fa fa-angle-right" aria-hidden="true"></i>
+          </span>
+          </button>
           {/* remaining inputs */}
 
           <div />
