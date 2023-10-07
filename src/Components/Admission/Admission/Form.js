@@ -78,8 +78,8 @@ const Form = () => {
     axios
       .post("/admission", formData)
       .then((res) => {
-        // console.log("Form data sent successfully:", res);
-        console.log(formData);
+        console.log("Form data sent successfully:", res);
+        // console.log(formData);
       })
       .catch((error) => {
         console.error("Error sending form data:", error);
