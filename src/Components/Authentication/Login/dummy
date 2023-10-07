@@ -1,0 +1,98 @@
+import React from 'react'
+import './Login.css'
+import { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
+import Header from '../../DashBoard/Header/Header';
+
+
+ const Login = () => {
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
+//   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // const handleEmailChange = (e) => {
+  //   setEmail(e.target.value);
+  // };
+
+  // const handlePasswordChange = (e) => {
+  //   setPassword(e.target.value);
+  // };
+
+  // const handleLogin = () => {
+    // You can implement your authentication logic here
+    // For simplicity, we'll just check if the email and password are not empty
+  //   if (email && password) {
+  //     setIsLoggedIn(true);
+  //   }else{
+  //     alert("not successful")
+  //   }
+  // };
+
+  // const handleLogout = () => {
+  //   setIsLoggedIn(false);
+  //   setEmail('');
+  //   setPassword('');
+  // };
+  return (
+    <div style={{ display: "flex", flexDirection: "row" ,backgroundColor:"#95a5a6" , height:"100vh"}}>
+
+      <Header />
+
+      <div>
+        <img className='imageside' src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=10" />
+      </div>
+
+
+
+      <div className='login'>
+        {/* {
+          isLoggedIn ? (
+            <div>
+              <h2>Welcome, {email}!</h2>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          ) : ( */}
+
+            <Form border={'2px solid black'}>
+
+              <h2>
+                <i>Login to Step Academy </i>
+              </h2>
+              <div className="logo_img"><img className='logoImage' src="images/steplogo.png" alt="" /></div>
+
+              <label >User Id</label>
+              <input type="text"
+                className='inp'
+                placeholder="Email"
+                // value={email}
+                // onChange={handleEmailChange} 
+                />
+              <label >Password</label>
+              < input type="password"
+                className='inp'
+                placeholder="Password"
+                // value={password}
+                // onChange={handlePasswordChange}
+                 />
+
+              {/* <Button style={{ backgroundColor:"#7f8c8d"    }} onClick={handleLogin} >Submit</Button> */}
+              <Button style={{ backgroundColor:"#7f8c8d"    }}  >Submit</Button>
+
+
+
+
+
+
+
+            </Form>
+          {/* )} */}
+      </div>
+
+    </div >
+  )
+}
+
+export default Login
+
+

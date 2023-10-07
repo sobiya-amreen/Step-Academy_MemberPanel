@@ -1,0 +1,21 @@
+.home_slider_background{
+    background-image:url(https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg)
+}
+.featured_background{
+    background-image:url(https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg)
+}
+
+.join{
+    margin-bottom: 33px;
+    padding-top: 0px;
+}
+.whyChooseUs{
+    margin: 10%;
+    padding: 0px;
+}
+.grouped_sections {
+    width: 100%;
+    background: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}

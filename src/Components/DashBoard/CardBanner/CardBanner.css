@@ -1,0 +1,25 @@
+
+.sliderCard{
+    margin: 5px;
+    
+    height: 38rem;
+    /* background-color: red; */
+    margin-top: -80px;
+    
+}
+.course_text{
+    color: black;
+}
+/* .mainBox{
+    padding: 0;
+} */
+.courses {
+    width: 100%;
+    background: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.spokenEnglishCard{
+    background-color: red;
+}
+

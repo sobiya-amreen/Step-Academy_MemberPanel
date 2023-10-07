@@ -1,0 +1,136 @@
+.courseField {
+    /* width: 33%; */
+
+    /* width: 200px; */
+    margin: 10px;
+
+}
+
+/* .fieldBox{
+    display: block; 
+    margin: auto;   
+} */
+.course_search_form {
+    width: 67%;
+    margin-left: 190px;
+}
+
+.label {
+    display: flex;
+    margin-left: 200px;
+}
+
+.subjectBox {
+    margin-top: -50px;
+    /* height: 300px; */
+
+}
+
+.subjectSecondary {
+    margin-top: 20px;
+}
+
+div.row.subjectSecondary {
+    margin-top: -70px;
+}
+
+.size {
+    width: 400px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.subjectboxmargin {
+    margin-top: 15px;
+}
+
+.installmentcss {
+    margin: 10px;
+    width: 180px;
+    /* height: 50px; */
+}
+
+.div {
+    margin-top: 120px;
+}
+
+.sub1 {
+    display: 'flex';
+    flex-direction: row;
+    position: absolute;
+    right: 50%;
+    bottom: 30%;
+    background-color: aqua;
+   
+    /* margin: 100px; */
+}
+
+.head {
+    margin-bottom:45px;
+    margin-top: 20px;
+    margin-left:25%;
+    color: #ff6600;
+}
+.last{
+    margin-top: 30px;
+}
+.imageUpload{
+    margin-top: 30px;
+}
+.borderform{
+    /* border: 2px solid black; */
+    width: 700px;
+    align-items: center;
+    margin-left: 25%;
+    padding: 10px;
+}
+.AdmitionFormInputs{
+    width: 1200px;
+}
+/* .subjectBox{
+    display: "flex";
+              flex-direction: "row"; */
+               /* marginLeft: '160px', */
+              /* position: "relative";
+              bottom: "40px";
+} */
+
+
+/* 
+height: 50px;
+    padding-left: 22px;
+    border: none;
+    outline: none;
+    background: #f2f1f8; */
+
+
+    .courseBox{
+        margin-top: -50px;
+    }
+    .courseDropdown{
+        margin-left: 10px;
+    }
+    .installmentBox{
+        margin-left: 31%;
+        margin-top: 10px;
+    }
+    .installment{
+        margin-left: 10px;
+    }
+    .registrationInstallmentInput{
+        height: 50px;
+        /* width: 200px; */
+    /* padding-left: 22px; */
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: #f2f1f8;
+    }
+    .registrationBotton{
+        margin-top: 30px;
+    }
+    .registrationHeading{
+        color: #ff6600;
+    }
+
+    

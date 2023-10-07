@@ -1,0 +1,42 @@
+
+.home {
+    width: 100%;
+    height: 450px;
+    margin-top: 155px;
+}
+.bannerImg1{
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/premium-photo/business-graph-trade-monitor-mixed-media_641298-1016.jpg") ;
+    background-repeat: no-repeat;
+}
+
+.bannerImg2{
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/crop-hand-man-chalking-graph-blackboard_23-2148201000.jpg?w=996&t=st=1696250923~exp=1696251523~hmac=872ccf0929fa405f5814b88aeeaeb090a200b7b20ae77ecac766c016ce783cfa");
+    /* url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"); */
+    background-repeat: no-repeat;
+}
+.bannerImg3{
+    height: 500px;
+    width: 100%;
+    margin-top: 150px;
+    background-image: url("https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010144.jpg?w=996&t=st=1696251328~exp=1696251928~hmac=aac97cec01614b8fb775c8877f0f4a1faa6d5d4091e1d998cb5e6599ddcba7db");
+    /* url("https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"); */
+    /* https://as2.ftcdn.net/v2/jpg/06/20/35/33/1000_F_620353347_8UQiinlQoOGw1VLfygVMMDJMz1LmkHpU.jpg */
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+

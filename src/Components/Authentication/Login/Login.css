@@ -1,0 +1,67 @@
+.login{
+margin-top: 170px;
+margin-left:510px;
+padding:20px;
+height: 67vh;
+width: 400px;
+/* border: 2px solid gray; */
+align-items: center;
+text-align: center;
+/* box-shadow: 30px 30px 30px 10px gray; */
+background-color: #fff;
+
+}
+/* .inp{
+    height: 30px;
+    width: 170px;
+    margin-bottom: 10px;
+
+} */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10px; */
+    /* background-color: #fff; */
+}
+.logoImage{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+
+}
+.imageside{
+    height: 67vh;
+    width: 40%;
+    margin-top: 170px;
+    position: absolute;
+    left: 149px;
+    /* box-shadow: 5px 5px 5px gray; */
+}
+.loginBox{
+    margin-top: 42px;
+    margin-left: 15rem;
+    /* background-color: #fff; */
+    
+}
+.loginField{
+    width: 300px;
+    /* margin-right: -30px; */
+    margin-top: 20px;
+    
+}
+
+.loginfieldNames {
+    text-align: left;
+    color: #ff6600;
+    /* margin-top: 10px; */
+    /* padding-top: 13px; */
+    position: inherit;
+    bottom: -20px;
+}
+.loginButton{
+    width: 40%;
+    margin-top: 2rem;
+}
