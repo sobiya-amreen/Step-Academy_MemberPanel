@@ -42,7 +42,7 @@ const AboutUs = () => {
 						<div className="about_title">Your Solution for
                            A Bright Future</div>
 						<div className="about_text">
-							<p>Based in Sambhaji nagar Chinchwad PCMC Pune we are well-known for our quality education and highly
+							<p className='aboutUsText'>Based in Sambhaji nagar Chinchwad PCMC Pune we are well-known for our quality education and highly
                                professional and remarkable faculties, which assure the success of our students.
                                Steps Academy was established in 2012 by Mr. Sandesh Mukhedkar (CMA INTERMEDIATE, CS EXECUTIVE, MBA FINANCE, MCOM) teaching for nearly                                10 years now.
                                Steps Academy is a leading coaching institution EXCLUSIVELY catering to the needs of
@@ -54,7 +54,7 @@ const AboutUs = () => {
                                consistency and maintaining our quality in teaching. Students have demonstrated confidence
                                on the “STEPS” brand value and it continues till date.
                                .</p>
-							   <p>WE DO NOT TEACH MECHANICALLY, WE TEACH LOGICALLY…
+							   <p className='aboutUsText'>WE DO NOT TEACH MECHANICALLY, WE TEACH LOGICALLY…
 
                                S-STEPS
 
@@ -69,7 +69,7 @@ const AboutUs = () => {
 					</div>
 				</div>
 				<div className="col-lg-6">
-					<div className="about_image"><img src="https://stepsacademy.co.in/wp-content/uploads/2020/08/Director.jpeg" alt="https://unsplash.com/@jtylernix"/></div>
+					<div className="about_image"><img src="images/sandesh.jpg" alt="https://unsplash.com/@jtylernix"/></div>
 				</div>
 			</div>
 
@@ -77,14 +77,15 @@ const AboutUs = () => {
 			
 			<div className="row about_row row-lg-eq-height">
 				<div className="col-lg-6 order-lg-1 order-2">
-					<div className="about_image"><img src="images/about_1.jpg" alt=""/></div>
+					<div className="about_image"><img src="images/ashwin.jpg" alt=""/></div>
 				</div>
 				<div className="col-lg-6 order-lg-2 order-1">
 					<div className="about_content">
 						<div className="about_title">What We Actually Do</div>
 						<div className="about_text">
-							<p>Steps Academy classes strives to create an inspirational environment which exceeds all expectations of students and parents we also extend due exposure framework and environment to make students choose the right method of learning to the best of time and quality education.</p>
-							<p>We produced the best results from last 10 years. This tradition is continues with best results year after year. May it be 11th 12th or CA /CS / CMA Foundation/ EET and Intermediate and executive students as well as parents prefer steps Academy our any other coaching institutes due to our student friendly teaching methods multiple number of mock tests proper evaluations and personalised attention.</p>
+							<p className='aboutUsText'> Mr Ashwin Gudsurkar - Your trusted tutor for academic success! Join now to excel in your studies and achieve your goals.</p>
+							<p className='aboutUsText'>Steps Academy classes strives to create an inspirational environment which exceeds all expectations of students and parents we also extend due exposure framework and environment to make students choose the right method of learning to the best of time and quality education.</p>
+							<p className='aboutUsText'>We produced the best results from last 10 years. This tradition is continues with best results year after year. May it be 11th 12th or CA /CS / CMA Foundation/ EET and Intermediate and executive students as well as parents prefer steps Academy our any other coaching institutes due to our student friendly teaching methods multiple number of mock tests proper evaluations and personalised attention.</p>
 						</div>
 					</div>
 				</div>
