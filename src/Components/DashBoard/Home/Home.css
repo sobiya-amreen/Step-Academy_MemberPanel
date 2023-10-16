@@ -19,3 +19,12 @@
     padding-top: 30px;
     padding-bottom: 0px;
 }
+.grouped_title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #44425a;
+    width: 425px;
+}
+.Highlights{
+    text-align: left;
+}

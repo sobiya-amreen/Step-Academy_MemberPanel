@@ -47,14 +47,14 @@ const Form = () => {
 
 
   const handleImage = (e) => {
-    // e.preventDefault();
     setImage(e.target.files[0]);
+    console.log(e.target.files);
   };
   
 
   const handleSubmitData = (e) => {
     e.preventDefault();
-    console.log(phone);
+    // console.log(phone);
 
     const formData = new FormData();
     formData.append("image", image);
@@ -78,7 +78,8 @@ const Form = () => {
     formData.append("address", address);
 
 
-    console.log("hellllooooo",formData.name);
+    
+
     
     console.log("FormData:", formData);
     // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
@@ -86,7 +87,7 @@ const Form = () => {
       .post("/admission", formData)
       .then((res) => {
         console.log("Form data sent successfully:", res);
-        // console.log(formData);
+         console.log(formData);
        
       })
       .catch((error) => {

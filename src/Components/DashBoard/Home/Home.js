@@ -129,21 +129,21 @@ const Home = () => {
 
             {/* <!-- Events --> */}
 
-            <div className="col-lg-4 grouped_col">
-                <div className="grouped_title">Upcoming Events</div>
+            <div className="col-lg-4 grouped_col Highlights">
+                <div className="grouped_title">Step Academy's Key Highlights</div>
                 <div className="events">
 
                     {/* <!-- Event --> */}
                     <div className="event d-flex flex-row align-items-start justify-content-start">
                         <div>
                             <div className="event_date d-flex flex-column align-items-center justify-content-center">
-                                <div className="event_day">20</div>
-                                <div className="event_month">April</div>
+                                <div className="event_day">1</div>
+                                {/* <div className="event_month">April</div> */}
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">New Marketing Course Release</a></div>
-                            <div className="event_subtitle">Location: Online Platform</div>
+                            <div className="event_title"><a href="#">Comprehensive Education</a></div>
+                            <div className="event_subtitle">High-quality education for all.</div>
                         </div>
                     </div>
 
@@ -151,13 +151,13 @@ const Home = () => {
                     <div className="event d-flex flex-row align-items-start justify-content-start">
                         <div>
                             <div className="event_date d-flex flex-column align-items-center justify-content-center">
-                                <div className="event_day">23</div>
-                                <div className="event_month">April</div>
+                                <div className="event_day">2</div>
+                                {/* <div className="event_month">April</div> */}
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">Students Art Workshop</a></div>
-                            <div className="event_subtitle">Location: Online Platform</div>
+                            <div className="event_title"><a href="#">Experienced Educators</a></div>
+                            <div className="event_subtitle">Experienced, dedicated faculty team.</div>
                         </div>
                     </div>
 
@@ -165,13 +165,13 @@ const Home = () => {
                     <div className="event d-flex flex-row align-items-start justify-content-start">
                         <div>
                             <div className="event_date d-flex flex-column align-items-center justify-content-center">
-                                <div className="event_day">25</div>
-                                <div className="event_month">April</div>
+                                <div className="event_day">3</div>
+                                {/* <div className="event_month">April</div> */}
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">Launch Party for a new Platform</a></div>
-                            <div className="event_subtitle">Location: Online Platform</div>
+                            <div className="event_title"><a href="#">Personalized Academic Support</a></div>
+                            <div className="event_subtitle">Individualized approach to boost achievement.</div>
                         </div>
                     </div>
 
@@ -179,13 +179,13 @@ const Home = () => {
                     <div className="event d-flex flex-row align-items-start justify-content-start">
                         <div>
                             <div className="event_date d-flex flex-column align-items-center justify-content-center">
-                                <div className="event_day">27</div>
-                                <div className="event_month">April</div>
+                                <div className="event_day">4</div>
+                                {/* <div className="event_month">April</div> */}
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">New Marketing Course</a></div>
-                            <div className="event_subtitle">Location: Online Platform</div>
+                            <div className="event_title"><a href="#">uccess-Backed Results</a></div>
+                            <div className="event_subtitle">Proven track record of excellence.</div>
                         </div>
                     </div>
 
@@ -193,13 +193,13 @@ const Home = () => {
                     <div className="event d-flex flex-row align-items-start justify-content-start">
                         <div>
                             <div className="event_date d-flex flex-column align-items-center justify-content-center">
-                                <div className="event_day">29</div>
-                                <div className="event_month">April</div>
+                                <div className="event_day">5</div>
+                                {/* <div className="event_month">April</div> */}
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">New Marketing Course</a></div>
-                            <div className="event_subtitle">Location: Online Platform</div>
+                            <div className="event_title"><a href="#">Nurturing Well-Roundedness</a></div>
+                            <div className="event_subtitle">Holistic, well-rounded student development.</div>
                         </div>
                     </div>
 

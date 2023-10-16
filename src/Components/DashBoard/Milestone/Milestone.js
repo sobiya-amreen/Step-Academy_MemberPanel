@@ -16,7 +16,7 @@ const Milestone = () => {
             <div className="col-lg-3 milestone_col">
                 <div className="milestone text-center">
                     <div className="milestone_icon"><img src="images/milestone_1.svg" alt=""/></div>
-                    <div className="milestone_counter" data-end-value="1548">0</div>
+                    <div className="milestone_counter" data-end-value="1548">20+</div>
                     <div className="milestone_text">Online Courses</div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ const Milestone = () => {
             <div className="col-lg-3 milestone_col">
                 <div className="milestone text-center">
                     <div className="milestone_icon"><img src="images/milestone_2.svg" alt=""/></div>
-                    <div className="milestone_counter" data-end-value="7286">0</div>
+                    <div className="milestone_counter" data-end-value="7286">1000+</div>
                     <div className="milestone_text">Students</div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Milestone = () => {
             <div className="col-lg-3 milestone_col">
                 <div className="milestone text-center">
                     <div className="milestone_icon"><img src="images/milestone_3.svg" alt=""/></div>
-                    <div className="milestone_counter" data-end-value="257">0</div>
+                    <div className="milestone_counter" data-end-value="257">50+</div>
                     <div className="milestone_text">Teachers</div>
                 </div>
             </div>
