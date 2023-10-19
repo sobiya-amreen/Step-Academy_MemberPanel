@@ -25,7 +25,16 @@ const Form = () => {
         
   //     });
   // };
-  const [image, setImage] = useState("");
+
+
+
+
+
+
+
+
+
+  const [image, setImage] = useState(null);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -46,18 +55,25 @@ const Form = () => {
   const [address, setAddress] = useState("");
 
 
+
   const handleImage = (e) => {
     setImage(e.target.files[0]);
     console.log(e.target.files);
   };
-  
 
   const handleSubmitData = (e) => {
     e.preventDefault();
     // console.log(phone);
 
     const formData = new FormData();
-    formData.append("image", image);
+
+     if(image){
+
+       formData.append("image", image);
+     }
+
+
+
     formData.append("name", name);
     formData.append("phone", phone);
     formData.append("email", email);
@@ -82,7 +98,7 @@ const Form = () => {
 
     
     console.log("FormData:", formData);
-    // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
+    
     axios
       .post("/admission", formData)
       .then((res) => {
