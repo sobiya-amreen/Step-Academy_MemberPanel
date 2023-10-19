@@ -12,6 +12,45 @@ const EnquiryForm = () => {
 
   const enquerydata = {name:"",  contactNumber:"", emailId:"", cource:"",residentialAddress:""}
 	const [enqueryuserData,setEnqueryUserData]=useState(enquerydata)
+    // State variables for form validation
+    const [nameError, setNameError] = useState("");
+    const [phoneError, setPhoneError] = useState("");
+    const [emailError, setEmailError] = useState("");
+
+
+
+    const validateForm = () => {
+      let isValid = true;
+  
+      // Validate Name
+      if (!enqueryuserData.name) {
+        setNameError("Name is required");
+        isValid = false;
+      } else {
+        setNameError("");
+      }
+  
+      // Validate Phone
+      if (!enqueryuserData.contactNumber) {
+        setPhoneError("Phone number is required");
+        isValid = false;
+      } else {
+        setPhoneError("");
+      }
+  
+      // Validate Email
+      if (!enqueryuserData.emailId) {
+        setEmailError("Email is required");
+        isValid = false;
+      } else {
+        setEmailError("");
+      }
+  
+      return isValid;
+    };
+
+
+
 
 
 
@@ -25,22 +64,25 @@ const EnquiryForm = () => {
 	const handleEnqueryData = (e)=>{
 		setEnqueryUserData({...enqueryuserData,[e.target.name]:e.target.value})
 	}
+
+  
 	const saveUserEnquery=(e)=>{
 		e.preventDefault()
-	 axios.post("/enquiry",enqueryuserData)
-		.then((res)=>{
-			console.log(res);
-			// console.log(userData.name)
-			// resetForm()
-      if (res.status === 200) {
-				// Reset the form data after a successful submission
-				resetForm();
-			  }
-			// setUserData(" ");
-		})
-		.catch((err)=>{
-          console.log("This is the error",err);
-		})
+    if (validateForm()) {
+      axios.post("/enquiry", enqueryuserData)
+        .then((res) => {
+          console.log(res);
+          if (res.status === 200) {
+            resetForm();
+          }
+        })
+        .catch((err) => {
+          console.log("This is the error", err);
+        });
+    } else {
+      // Display an alert if the form is not valid
+      alert("Please fill out all the required fields before submitting.");
+    }
 	}
 
 
@@ -85,6 +127,7 @@ const EnquiryForm = () => {
               onChange={handleEnqueryData}
               name="name"
             />
+             <div className="error">{nameError}</div>
           </div>
 
           <div>
@@ -98,6 +141,7 @@ const EnquiryForm = () => {
               onChange={handleEnqueryData}
               name="contactNumber"
             />
+            <div className="error">{phoneError}</div>
           </div>
           <div>
             <h6 className="formLabel">email :</h6>
@@ -110,6 +154,7 @@ const EnquiryForm = () => {
               onChange={handleEnqueryData}
               name="emailId"
             />
+             <div className="error">{emailError}</div>
           </div>
           <div>
             <h6 className="formLabel">Class/Course :</h6>

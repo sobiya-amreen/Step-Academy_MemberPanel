@@ -14,3 +14,7 @@
 .enquiryFormHeading{
     color: #ff6600;
 }
+.error{
+    color: red;
+    /* margin-right: 350px; */
+}
