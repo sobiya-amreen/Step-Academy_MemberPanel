@@ -6,3 +6,33 @@ export const bannerData = [
 ]
 
 
+
+export const yourImageArray = [
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-10-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-8-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-7-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-6-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-5-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/Steps-gallery-2-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-11-min-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-3-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-4-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-16-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-14-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-1-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-15-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-12-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-17-min.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.55-PM.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.56-PM.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.57-PM.jpeg',
+    'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.58-PM.jpeg',
+    // Add more image URLs as needed
+  ];
+  
+  
+  
+  
+  
+  
+
