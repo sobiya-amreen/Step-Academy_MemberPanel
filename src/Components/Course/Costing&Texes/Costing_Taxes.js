@@ -43,7 +43,7 @@ const Costing_Taxes = () => {
                 {/* <!-- News Post --> */}
                 <div className="news_post">
                   <div className="news_post_image">
-                    <img className="CourseImage" src="https://as1.ftcdn.net/v2/jpg/06/21/40/14/1000_F_621401423_hiqoTMasWSE3JUx9GIMLZTZnuQBCY8Ea.jpg" alt="" />
+                    <img className="CourseImage" src="images/tax.jpg" alt="" />
                   </div>
                   <div className="news_post_body">
                     {/* <div className="news_post_date">

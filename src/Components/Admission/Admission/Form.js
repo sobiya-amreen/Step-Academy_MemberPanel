@@ -5,113 +5,56 @@ import './AdmissionForm.css'
 
 
 const Form = () => {
-  // const [image, setImage] = useState("");
-
-  // const handleImage = (e) => {
-  //   console.log(e.target.files);
-  //   setImage(e.target.files[0]);
-  // };
-  // const handleImageApi = () => {
-  //   const formData = new FormData();
-  //   formData.append("image", image);
-  //   axios
-  //     .post(
-        
-  //       "",
-  //       formData
-  //     )
-  //     .then((res) => {
-  //       console.log(res);
-        
-  //     });
-  // };
-
-
-
-
-
-
-
-
-
-  const [image, setImage] = useState(null);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [selectedSubject1, setSelectedSubject1] = useState("");
-  const [selectedSubject2, setSelectedSubject2] = useState("");
-  const [selectedSubject3, setSelectedSubject3] = useState("");
-  const [selectedSubject4, setSelectedSubject4] = useState("");
-  const [selectedSubject5, setSelectedSubject5] = useState("");
-  const [selectedSubject6, setSelectedSubject6] = useState("");
-  const [selectedCourse1, setSelectedCourse1] = useState("");
-  const [selectedCourse2, setSelectedCourse2] = useState("");
-  const [selectedCourse3, setSelectedCourse3] = useState("");
-  const [selectedCourse4, setSelectedCourse4] = useState("");
-  const [installmentInput1, setInstallmentInput1] = useState("");
-  const [installmentDate1, setInstallmentDate1] = useState("");
-  const [installmentInput2, setInstallmentInput2] = useState("");
-  const [installmentDate2, setInstallmentDate2] = useState("");
-  const [address, setAddress] = useState("");
-
-
-
-  const handleImage = (e) => {
-    setImage(e.target.files[0]);
-    console.log(e.target.files);
-  };
-
-  const handleSubmitData = (e) => {
-    e.preventDefault();
-    // console.log(phone);
-
-    const formData = new FormData();
-
-     if(image){
-
-       formData.append("image", image);
-     }
-
-
-
-    formData.append("name", name);
-    formData.append("phone", phone);
-    formData.append("email", email);
-    formData.append("subject1", selectedSubject1);
-    formData.append("subject2", selectedSubject2);
-    formData.append("subject3", selectedSubject3);
-    formData.append("subject4", selectedSubject4);
-    formData.append("subject5", selectedSubject5);
-    formData.append("subject6", selectedSubject6);
-    formData.append("course1", selectedCourse1);
-    formData.append("course2", selectedCourse2);
-    formData.append("course3", selectedCourse3);
-    formData.append("course4", selectedCourse4);
-    formData.append("installmentInput1", installmentInput1);
-    formData.append("installment1Date1", installmentDate1);
-    formData.append("installmentInput2", installmentInput2);
-    formData.append("installment1Date2", installmentDate2);
-    formData.append("address", address);
-
-
-    
-
-    
-    console.log("FormData:", formData);
-    
-    axios
-      .post("/admission", formData)
-      .then((res) => {
-        console.log("Form data sent successfully:", res);
-         console.log(formData);
-       
-      })
-      .catch((error) => {
-        console.error("Error sending form data:", error);
-      });
-  };
-
  
+  const data = {
+    name:"",
+    phone:"",
+    email:"",
+    subject1:"",
+    subject2:"",
+    subject3:"",
+    subject4:"",
+    subject5:"",
+    subject6:"",
+    course1:"",
+    course2:"",
+    course3:"",
+    course4:"",
+    installmentInput1:"",
+    installmentInput2:"",
+    installment1Date1:"",
+    installment1Date2:"",
+    address:"",
+    image:""
+  }
+	const [admissionuserData,setAdmissionUserData]=useState(data)
+
+	const resetForm = () => {
+		setAdmissionUserData(data); // Reset the userData state to its initial empty state
+	  };
+	  
+
+	const handleadmissionData = (e)=>{
+		setAdmissionUserData({...admissionuserData,[e.target.name]:e.target.value})
+	}
+	const saveUserAdmission=(e)=>{
+		e.preventDefault()
+	 axios.post("/student",admissionuserData)
+		.then((res)=>{
+			console.log(res);
+			// console.log(userData.name)
+			
+			if (res.status === 200) {
+				// Reset the form data after a successful submission
+				resetForm();
+			  }
+
+		})
+		.catch((err)=>{
+          console.log("This is the error",err);
+		})
+	}
+
   return (
     <div className="borderform">
       <form >
@@ -133,8 +76,9 @@ const Form = () => {
               placeholder="Enter your name"
               name="name"
               // required="required"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+               value={admissionuserData.name}
+               onChange={handleadmissionData}
+              
             />
           </div>
 
@@ -147,8 +91,8 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your Contact Number"
               // required="required"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+               value={admissionuserData.phone}
+               onChange={handleadmissionData}
             />
           </div>
          
@@ -160,28 +104,11 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your email"
               // required="required"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+               value={admissionuserData.email}
+               onChange={handleadmissionData}
             />
           </div>
         
-            {/* <div>
-            <h6 className="formLabel">Phone :</h6>
-            <input
-              type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              
-            />
-          </div> */}
-
-
-
-
-
-
-
-
 
           <div>
           <br/>
@@ -192,9 +119,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={selectedSubject1}
+               value={admissionuserData.selectedSubject1}
+               onChange={handleadmissionData}
               name="subject1"
-              onChange={(e) => setSelectedSubject1(e.target.value)}
+            
             >
               <option value="">Subject 1</option>
               <option value="Physics">Physics</option>
@@ -215,9 +143,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={selectedSubject2}
+               value={admissionuserData.selectedSubject2}
+               onChange={handleadmissionData}
               name="subject2"
-              onChange={(e) => setSelectedSubject2(e.target.value)}
+             
             >
               <option value="">Subject 2</option>
                <option value="Mathamatics">Mathamatics</option>
@@ -238,9 +167,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={selectedSubject3}
+               value={admissionuserData.selectedSubject3}
+               onChange={handleadmissionData}
               name="subject3"
-              onChange={(e) => setSelectedSubject3(e.target.value)}
+              
             >
               <option value="">Subject 3</option>
               <option value="Biology">Biology</option>
@@ -264,9 +194,10 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-    value={selectedSubject4}
+     value={admissionuserData.selectedSubject4}
+     onChange={handleadmissionData}
     name="subject4"
-    onChange={(e) => setSelectedSubject4(e.target.value)}
+   
   >           <option value="">Subject 4</option>
               <option value="English">English</option>
               <option value="Physics">Physics</option>
@@ -291,9 +222,10 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-    value={selectedSubject5}
+     value={admissionuserData.selectedSubject5}
+     onChange={handleadmissionData}
     name="subject5"
-    onChange={(e) => setSelectedSubject5(e.target.value)}
+   
   > 
                  <option value="">Subject 5</option>
               <option value="Computer Science">Computer Science</option>
@@ -319,9 +251,10 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-    value={selectedSubject6}
+     value={admissionuserData.selectedSubject6}
+     onChange={handleadmissionData}
     name="subject6"
-    onChange={(e) => setSelectedSubject6(e.target.value)}
+    
   > 
   <option value="">Subject 6</option>
               <option value="Physics">Physics</option>
@@ -350,8 +283,9 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               name="course1"
-              value={selectedCourse1}
-              onChange={(e) => setSelectedCourse1(e.target.value)}
+              value={admissionuserData.selectedCourse1}
+              onChange={handleadmissionData}
+             
             >
               <option value="">Course 1</option>
               <option value="11th commerce all subject">11th commerce all subject</option>
@@ -374,9 +308,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={selectedCourse2}
+              value={admissionuserData.selectedCourse2}
+              onChange={handleadmissionData}
               name="course2"
-              onChange={(e) => setSelectedCourse2(e.target.value)}
+            
             >
               <option value="">Course 2</option>
               <option value="12th commerce all subject">12th commerce all subject</option>
@@ -397,8 +332,8 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               name="course3"
-              value={selectedCourse3}
-              onChange={(e) => setSelectedCourse3(e.target.value)}
+              value={admissionuserData.selectedCourse3}
+              onChange={handleadmissionData}
             >
               <option value="">Course 3</option>
               <option value="11th + 12th all subject">11th + 12th all subject</option>
@@ -419,9 +354,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={selectedCourse4}
+              value={admissionuserData.selectedCourse4}
+              onChange={handleadmissionData}
               name="course4"
-              onChange={(e) => setSelectedCourse4(e.target.value)}
+             
             >
               <option value="">Course 4</option>
               <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
@@ -438,14 +374,7 @@ const Form = () => {
             <div className="installmentBox">
           <h6 className="label head installment">Installment :</h6>
 
-          {/* 
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'row',
-                            position: 'absolute',
-                            // left: '35%',
-                            top: '30px'
-                        }}  > */}
+       
           <div 
             style={{
               display: "flex",
@@ -460,18 +389,20 @@ const Form = () => {
               type="text"
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 1"
-              // value={installmentInput1}
+               value={admissionuserData.installmentInput1}
+               onChange={handleadmissionData}
               name="installmentInput1"
-              onChange={(e) => setInstallmentInput1(e.target.value)}
+             
             />
 
             <input
               type="text"
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 2"
-              // value={installmentInput2}
+               value={admissionuserData.installmentInput2}
+               onChange={handleadmissionData}
               name="installmentInput2"
-              onChange={(e) => setInstallmentInput2(e.target.value)}
+            
             />
             {/* <input type="date" className="course_input courseField  installmentcss" /> */}
           </div>
@@ -486,26 +417,18 @@ const Form = () => {
             }}
           >
             <input type="date" 
-             value={installmentDate1}
-             onChange={(e) => setInstallmentDate1(e.target.value)} name="installment1Date1" className="  installmentcss registrationInstallmentInput" />
+              value={admissionuserData.installmentDate1}
+              onChange={handleadmissionData}
+              name="installment1Date1" className="  installmentcss registrationInstallmentInput" />
 
             <input type="date"
-              value={installmentDate2}
-              onChange={(e) => setInstallmentDate2(e.target.value)} name="installment1Date2" className=" installmentcss registrationInstallmentInput" />
+               value={admissionuserData.installmentDate2}
+               onChange={handleadmissionData}
+              name="installment1Date2" className=" installmentcss registrationInstallmentInput" />
           </div>
           </div>
 
-          {/* installment ends */}
-
-          {/* remaining inputs */}
-          {/* <div>
-            <input
-              type="text"
-              className="last formInputs size"
-              placeholder="Address"
-              required="required"
-            />
-          </div> */}
+      
            <div className="AdmitionFormInputs">
             <h6 className="formLabel">Address :</h6>
             <input
@@ -513,9 +436,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your Address"
               // required="required"
-               value={address}
+                value={admissionuserData.address}
+                onChange={handleadmissionData}
                name="address"
-              onChange={(e) => setAddress(e.target.value)}
+             
             />
           </div>
 
@@ -525,30 +449,17 @@ const Form = () => {
             <input
                type="file"
               className="contact_input formInputs"
-              // value={image}
+               value={admissionuserData.image}
+               onChange={handleadmissionData}
               // placeholder="Phone Number"
               // required="required"
               name="image"
-              files={image}
-              onChange={handleImage}
+             
             />
           </div>
 
-          {/* <div>
-            <input
-              type="file"
-              onChange={handleImage}
-              className="imageUpload formInputs size"
-              required="required"
-            />
-          </div> */}
-
-          {/* <div><input type="text" className="contact_input formInputs" placeholder="Residential Address" required="required"/></div>
-                <div><input type="text" className="contact_input formInputs" placeholder="Reference If Any" required="required"/></div> */}
-
-          {/* <div><textarea className="contact_input contact_textarea formInputs" placeholder="Message"></textarea></div> */}
-          <button type="button" 
-          onClick={handleSubmitData}
+           <button type="button" 
+         onClick={saveUserAdmission}
           className="contact_button registrationBotton">
            <span>Submit</span>
            <span className="button_arrow">

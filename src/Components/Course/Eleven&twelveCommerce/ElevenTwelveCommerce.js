@@ -67,7 +67,7 @@ const ElevenTwelveCommerce = () => {
                 {/* <!-- News Post --> */}
                 <div className="news_post">
                   <div className="news_post_image">
-                    <img className="CourseImage" src="https://as2.ftcdn.net/v2/jpg/06/20/35/33/1000_F_620353347_8UQiinlQoOGw1VLfygVMMDJMz1LmkHpU.jpg" alt="" />
+                    <img className="CourseImage" src="images/commerce.jpg" alt="" />
                   </div>
                   <div className="news_post_body">
                     {/* <div className="news_post_date"><a href="#">April 02, 2018</a></div> */}
