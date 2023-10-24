@@ -41,28 +41,7 @@ const ElevenTwelveCommerce = () => {
             {/* <!-- News Posts --> */}
             <div className="col-lg-8">
               <div className="news_posts">
-                {/* <!-- News Post --> */}
-                {/* <div className="news_post">
-                        <div className="news_post_image"><img src="images/news_5.jpg" alt=""/></div>
-                        <div className="news_post_body">
-                            <div className="news_post_date"><a href="#">April 02, 2018</a></div>
-                            <div className="news_post_title"><a href="#">Books, Kindle or Tablet?</a></div>
-                            <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
-                                <div className="news_post_author">By <a href="#">William Smith</a></div>
-                                <div className="news_post_comments"><a href="#">3 Comments</a></div>
-                                <div className="news_post_tags">
-                                    <span>in </span>
-                                    <ul>
-                                        <li><a href="#">Social Media</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="news_post_text">
-                                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut. Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue.</p>
-                            </div>
-                            <div className="news_post_link"><a href="#">Read More</a></div>
-                        </div>
-                    </div> */}
+               
 
                 {/* <!-- News Post --> */}
                 <div className="news_post">
@@ -71,9 +50,9 @@ const ElevenTwelveCommerce = () => {
                   </div>
                   <div className="news_post_body">
                     {/* <div className="news_post_date"><a href="#">April 02, 2018</a></div> */}
-                    <div className="news_post_title">
+                    {/* <div className="news_post_title">
                       <a href="#">Commerce</a>
-                    </div>
+                    </div> */}
                     <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
                       {/* <div className="news_post_author">By <a href="#">William Smith</a></div> */}
                       {/* <div className="news_post_comments"><a href="#">3 Comments</a></div> */}

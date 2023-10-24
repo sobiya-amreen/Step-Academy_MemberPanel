@@ -46,7 +46,7 @@ const SpokenEnglish = () => {
                         <div className="news_post_image"><img className='CourseImage' src="https://as1.ftcdn.net/v2/jpg/02/20/21/40/1000_F_220214030_D3P5eFfXvY8pz8SEhPeQh27xvbJ1jX1n.jpg" alt=""/></div>
                         <div className="news_post_body">
                             {/* <div className="news_post_date"><a href="#">April 02, 2018</a></div> */}
-                            <div className="news_post_title"><a href="#">100% Guarantee to Speak in English Fluently</a></div>
+                            {/* <div className="news_post_title"><a href="#">100% Guarantee to Speak in English Fluently</a></div> */}
                             <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
                                 {/* <div className="news_post_author">By <a href="#">William Smith</a></div> */}
                                 {/* <div className="news_post_comments"><a href="#">3 Comments</a></div> */}
