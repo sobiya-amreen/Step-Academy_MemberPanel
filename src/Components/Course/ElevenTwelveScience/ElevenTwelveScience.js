@@ -49,9 +49,9 @@ const ElevenTwelveScience = () => {
                     {/* <div className="news_post_date">
                       <a href="#">April 02, 2018</a>
                     </div> */}
-                    <div className="news_post_title">
+                    {/* <div className="news_post_title">
                       <a href="#">Science</a>
-                    </div>
+                    </div> */}
                     <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
                       {/* <div className="news_post_author">
                         By <a href="#">William Smith</a>

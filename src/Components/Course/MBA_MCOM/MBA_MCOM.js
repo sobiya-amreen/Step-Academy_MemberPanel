@@ -47,7 +47,7 @@ const MBA_MCOM = () => {
                         <div className="news_post_image"><img className='CourseImage' src="https://as2.ftcdn.net/v2/jpg/06/27/91/97/1000_F_627919780_dSnyf5b27wGUaevR2z8xW0WEgBFAe7lx.jpg" alt=""/></div>
                         <div className="news_post_body">
                             {/* <div className="news_post_date"><a href="#">April 02, 2018</a></div> */}
-                            <div className="news_post_title"><a href="#">MBA, MCOM</a></div>
+                            {/* <div className="news_post_title"><a href="#">MBA, MCOM</a></div> */}
                             <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
                                 {/* <div className="news_post_author">By <a href="#">William Smith</a></div> */}
                                 {/* <div className="news_post_comments"><a href="#">3 Comments</a></div> */}

@@ -49,21 +49,11 @@ const CA_CMA = () => {
                     {/* <div className="news_post_date">
                       <a href="#">April 02, 2018</a>
                     </div> */}
-                    <div className="news_post_title">
+                    {/* <div className="news_post_title">
                       <a href="#">CA, CMA</a>
-                    </div>
-                    <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
-                      {/* <div className="news_post_author">
-                        By <a href="#">William Smith</a>
-                      </div> */}
-                      {/* <div className="news_post_comments"><a href="#">3 Comments</a></div> */}
-                      <div className="news_post_tags">
-                        {/* <span>in </span> */}
-                        {/* <ul>
-                                        <li><a href="#">Social Media</a></li>
-                                    </ul> */}
-                      </div>
-                    </div>
+                    </div> */}
+                  
+                  
                     <div className="news_post_text">
                       <p>
                         While Choosing a Professional Path Is All About What

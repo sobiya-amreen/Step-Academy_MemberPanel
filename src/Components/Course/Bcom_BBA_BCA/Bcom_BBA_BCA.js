@@ -50,7 +50,7 @@ const Bcom_BBA_BCA = () => {
                       <a href="#">April 02, 2018</a>
                     </div> */}
                     <div className="news_post_title">
-                      <a href="#">BCOM, BBA, BCA</a>
+                      {/* <a href="#">BCOM, BBA, BCA</a> */}
                     </div>
                     <div className="news_post_meta d-flex flex-row align-items-start justify-content-start">
                       {/* <div className="news_post_author">

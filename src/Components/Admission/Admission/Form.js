@@ -39,16 +39,16 @@ const Form = () => {
 	}
 	const saveUserAdmission=(e)=>{
 		e.preventDefault()
-	 axios.post("/student",admissionuserData)
+	 axios.post("/admission",admissionuserData)
 		.then((res)=>{
       console.log(admissionuserData);
 			console.log(res);
 			//  console.log(admissionuserData.name)
 			
-			if (res.status === 200) {
-				// Reset the form data after a successful submission
-				resetForm();
-			  }
+			// if (res.status === 200) {
+			// 	// Reset the form data after a successful submission
+			// 	resetForm();
+			//   }
 
 		})
 		.catch((err)=>{
