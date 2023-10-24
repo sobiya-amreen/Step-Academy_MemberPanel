@@ -135,7 +135,7 @@ const CardCarousel = () => {
             fees={"$35"}
             online_literature_course={"DMIT counseling"}
             course_text={
-              "Discover your potential through DMIT expert career counseling hghjfhfhfh hghfgfjhgfjf."
+              "This replacement maintains the same line size while conveying the message about DMIT"
             }
           />
           </Link>
@@ -151,7 +151,7 @@ const CardCarousel = () => {
             fees={"$35"}
             online_literature_course={"Spoken English"}
             course_text={
-              "Join us to improve fluency, enhance vocabulary, and boost your self-assurance  hghjfhghj  "
+              "Join us to improve fluency, enhance vocabulary, and boost your self-assurance, Hurry up  "
             }
           />
           </Link>
