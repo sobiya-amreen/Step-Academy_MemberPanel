@@ -30,7 +30,7 @@ const Form = () => {
 	const [admissionuserData,setAdmissionUserData]=useState(data)
 
 	const resetForm = () => {
-		setAdmissionUserData(data); // Reset the userData state to its initial empty state
+		setAdmissionUserData(data); // Reset the admissionuserData state to its initial empty state
 	  };
 	  
 
@@ -41,8 +41,9 @@ const Form = () => {
 		e.preventDefault()
 	 axios.post("/student",admissionuserData)
 		.then((res)=>{
+      console.log(admissionuserData);
 			console.log(res);
-			// console.log(userData.name)
+			//  console.log(admissionuserData.name)
 			
 			if (res.status === 200) {
 				// Reset the form data after a successful submission
@@ -119,7 +120,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-               value={admissionuserData.selectedSubject1}
+               value={admissionuserData.subject1}
                onChange={handleadmissionData}
               name="subject1"
             
@@ -143,7 +144,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-               value={admissionuserData.selectedSubject2}
+               value={admissionuserData.subject2}
                onChange={handleadmissionData}
               name="subject2"
              
@@ -167,7 +168,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-               value={admissionuserData.selectedSubject3}
+               value={admissionuserData.subject3}
                onChange={handleadmissionData}
               name="subject3"
               
@@ -194,7 +195,7 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-     value={admissionuserData.selectedSubject4}
+     value={admissionuserData.subject4}
      onChange={handleadmissionData}
     name="subject4"
    
@@ -222,7 +223,7 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-     value={admissionuserData.selectedSubject5}
+     value={admissionuserData.subject5}
      onChange={handleadmissionData}
     name="subject5"
    
@@ -251,7 +252,7 @@ const Form = () => {
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
     // required="required"
-     value={admissionuserData.selectedSubject6}
+     value={admissionuserData.subject6}
      onChange={handleadmissionData}
     name="subject6"
     
@@ -283,7 +284,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               name="course1"
-              value={admissionuserData.selectedCourse1}
+              value={admissionuserData.course1}
               onChange={handleadmissionData}
              
             >
@@ -308,7 +309,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={admissionuserData.selectedCourse2}
+              value={admissionuserData.course2}
               onChange={handleadmissionData}
               name="course2"
             
@@ -332,7 +333,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               name="course3"
-              value={admissionuserData.selectedCourse3}
+              value={admissionuserData.course3}
               onChange={handleadmissionData}
             >
               <option value="">Course 3</option>
@@ -354,7 +355,7 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
               // required="required"
-              value={admissionuserData.selectedCourse4}
+              value={admissionuserData.course4}
               onChange={handleadmissionData}
               name="course4"
              
