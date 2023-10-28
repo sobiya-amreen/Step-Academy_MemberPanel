@@ -32,11 +32,11 @@ const Banner = () => {
   <div>
     <Carousel 
 responsive={responsive}
-swipeable={true}
-draggable={true}
+swipeable={false}
+draggable={false}
 infinite={true}
 autoPlay={true}
-autoPlaySpeed={9000}
+autoPlaySpeed={3000}
 keyBoardControl={true}
 slidesToSlide={1}
  dotListclassName="custom-dot-list-style"
