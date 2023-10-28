@@ -18,12 +18,12 @@ const WhyChooseUs = () => {
 					<div className="col">
 						<div className="home_content text-center">
 							<div className="home_title">Why Choose Us</div>
-							<div className="breadcrumbs">
+							{/* <div className="breadcrumbs">
 								<ul>
 									<li><a href="index.html">Home</a></li>
 									<li>Why Choose us</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
