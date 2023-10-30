@@ -118,12 +118,10 @@ const DMIT_Career_Counseling = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                      DMIT (Dermatoglyphics Multiple Intelligence Test) counseling is a service that assesses an individual's unique fingerprints and brain development to determine their multiple intelligences.
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                    It helps individuals understand their strengths, weaknesses, and potential areas of development, enabling them to make informed decisions about education and career choices.
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -133,7 +131,7 @@ const DMIT_Career_Counseling = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                        Certified Counselors
                       </li>
                       <li>
                         {" "}
@@ -141,7 +139,7 @@ const DMIT_Career_Counseling = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Detailed Analysis{" "}
                       </li>
                       <li>
                         {" "}
@@ -149,7 +147,7 @@ const DMIT_Career_Counseling = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Career Guidance:
                       </li>
                       <li>
                         {" "}
@@ -157,7 +155,7 @@ const DMIT_Career_Counseling = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                        Parental Involvement
                       </li>
                       <li>
                         {" "}
@@ -165,7 +163,7 @@ const DMIT_Career_Counseling = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                       Customized Strategies{" "}
                       </li>
                     </ul>
 

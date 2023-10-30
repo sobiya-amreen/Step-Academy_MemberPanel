@@ -12,6 +12,16 @@ import {
 } from "./CardBannerData";
 import { Link } from "react-router-dom";
 
+
+
+
+  const scrollToTop = () => {
+      window.scrollTo(0, 0)
+  }
+
+
+
+
 const CardCarousel = () => {
   // const Profile = TeacherprofileData.map((item) => (
   //     <CardBanner
@@ -49,7 +59,7 @@ const CardCarousel = () => {
           itemClass="carousel-item-padding-40-px"
           containerClass="carousel-container"
         >
-          <Link to="/eleven_twelve_commerce">
+          <Link to="/eleven_twelve_commerce"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -64,7 +74,7 @@ const CardCarousel = () => {
           />
           </Link>
           
-          <Link to="/eleven_twelve_science">
+          <Link to="/eleven_twelve_science"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://images.pexels.com/photos/5427859/pexels-photo-5427859.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -79,7 +89,7 @@ const CardCarousel = () => {
           />
           </Link>
          
-         <Link to="/bcom_bba_bca">
+         <Link to="/bcom_bba_bca"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -95,7 +105,7 @@ const CardCarousel = () => {
           />
           </Link>
           
-          <Link to="/mba_mcom">
+          <Link to="/mba_mcom"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://cdn.pixabay.com/photo/2015/02/05/08/12/stock-624712_640.jpg"
@@ -110,7 +120,7 @@ const CardCarousel = () => {
           />
           </Link>
           
-          <Link to="/ca_cma">
+          <Link to="/ca_cma"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://images.pexels.com/photos/8370970/pexels-photo-8370970.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -125,7 +135,7 @@ const CardCarousel = () => {
           />
           </Link>
            
-           <Link to="/dmit_career_counseling">
+           <Link to="/dmit_career_counseling"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://cdn.pixabay.com/photo/2016/03/10/08/49/hand-1248053_640.jpg"
@@ -140,7 +150,7 @@ const CardCarousel = () => {
           />
           </Link>
           
-          <Link to="/spoken_english">
+          <Link to="/spoken_english"  onClick={scrollToTop}>
           <CardBanner className='spokenEnglishCard'
             url={
               // "https://cdn.pixabay.com/photo/2012/11/06/04/00/board-64269_640.jpg"
@@ -156,7 +166,7 @@ const CardCarousel = () => {
           />
           </Link>
           
-          <Link to="/costing_taxes">
+          <Link to="/costing_taxes"  onClick={scrollToTop}>
           <CardBanner
             url={
               "https://images.pexels.com/photos/6863515/pexels-photo-6863515.jpeg?auto=compress&cs=tinysrgb&w=600"

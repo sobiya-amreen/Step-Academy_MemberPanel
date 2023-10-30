@@ -168,12 +168,10 @@ const Costing_Taxes = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                    Costing refers to the process of estimating and managing the expenses associated with producing goods or services in business, helping determine product pricing and profitability.
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                    Taxes encompass the various levies imposed by governments on individuals and businesses to fund public services and infrastructure.
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -183,7 +181,7 @@ const Costing_Taxes = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                        Experienced Instructors
                       </li>
                       <li>
                         {" "}
@@ -191,7 +189,7 @@ const Costing_Taxes = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Comprehensive Curriculum{" "}
                       </li>
                       <li>
                         {" "}
@@ -199,7 +197,7 @@ const Costing_Taxes = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Practical Applications
                       </li>
                       <li>
                         {" "}
@@ -207,7 +205,7 @@ const Costing_Taxes = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                       Tax Planning
                       </li>
                       <li>
                         {" "}
@@ -215,7 +213,7 @@ const Costing_Taxes = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                        Certification Preparation{" "}
                       </li>
                     </ul>
 

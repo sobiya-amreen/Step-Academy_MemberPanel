@@ -101,15 +101,15 @@ const MBA_MCOM = () => {
                         
                         <p><strong className="text-black d-block">Teacher:</strong>Sandesh Mukhedkar</p>
                         <p className="mb-5"><strong className="text-black d-block">Hours:</strong>Time - 10 am to 8 PM</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque dolore libero corrupti! Itaque, delectus?</p>
-                        <p>Modi sit dolor repellat esse! Sed necessitatibus itaque libero odit placeat nesciunt, voluptatum totam facere.</p>
+                        <p>M.BA (Master of Business Administration) is a postgraduate program focused on business and management, covering areas such as finance, marketing, leadership, and strategy.</p>
+                        <p>M.COM (Master of Commerce) is a postgraduate program that explores commerce-related fields, including economics, accounting, and business studies.</p>
     
                         <ul className="ul-check primary list-unstyled mb-5">
-                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i>  Lorem ipsum dolor sit amet consectetur</li>
-                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i>  consectetur adipisicing  </li>
-                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Sit dolor repellat esse</li>
-                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Necessitatibus</li>
-                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Sed necessitatibus itaque </li>
+                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i>  Experienced Instructors</li>
+                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i>  Exam-Oriented Guidance </li>
+                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Study Materials</li>
+                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Practical Insights</li>
+                            <li> <i className="fa fa-angle-right Arrow" aria-hidden="true"></i> Flexibility </li>
                         </ul>
 
                         <p>

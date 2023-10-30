@@ -124,12 +124,12 @@ const CA_CMA = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                    Both CA and CMA courses are highly prestigious and recognized in the field of accounting and finance, equipping individuals with in-depth knowledge and skills to excel in the accounting profession and related industries.
+
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                    Our facilities are as follows
+
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -139,7 +139,7 @@ const CA_CMA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                       Through Course Coverage
                       </li>
                       <li>
                         {" "}
@@ -147,7 +147,7 @@ const CA_CMA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Interactive Learning{" "}
                       </li>
                       <li>
                         {" "}
@@ -155,7 +155,7 @@ const CA_CMA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Exam-oriented Preparation
                       </li>
                       <li>
                         {" "}
@@ -163,7 +163,7 @@ const CA_CMA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                        Doubt Clearing Sessions
                       </li>
                       <li>
                         {" "}
@@ -171,7 +171,7 @@ const CA_CMA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                        Online Learning Resources{" "}
                       </li>
                     </ul>
 

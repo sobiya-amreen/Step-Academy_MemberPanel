@@ -135,12 +135,10 @@ const ElevenTwelveCommerce = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                    11th and 12th grades are crucial for students pursuing commerce as these lay the foundation for future studies and careers in business, finance, and economics.
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                    Students in the commerce stream develop skills in financial management, accounting, business principles, and economic analysis.
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -150,7 +148,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                        Experienced Faculty
                       </li>
                       <li>
                         {" "}
@@ -158,7 +156,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Comprehensive Curriculum{" "}
                       </li>
                       <li>
                         {" "}
@@ -166,7 +164,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Regular Assessments
                       </li>
                       <li>
                         {" "}
@@ -174,7 +172,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                        Doubt Resolution
                       </li>
                       <li>
                         {" "}
@@ -182,7 +180,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                        Study Materials{" "}
                       </li>
                     </ul>
 

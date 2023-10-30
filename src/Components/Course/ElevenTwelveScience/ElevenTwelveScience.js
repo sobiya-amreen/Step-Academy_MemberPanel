@@ -122,12 +122,10 @@ const ElevenTwelveScience = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                    11th and 12th grades are a critical phase in a student's education, especially for those pursuing science streams, as they provide the foundation for higher education and careers in science and technology.
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                    Students typically choose between science streams such as Physics, Chemistry, Biology (PCB), or Physics, Chemistry, Mathematics (PCM).
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -137,7 +135,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                        Experienced Teachers
                       </li>
                       <li>
                         {" "}
@@ -145,7 +143,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Comprehensive Curriculum{" "}
                       </li>
                       <li>
                         {" "}
@@ -153,7 +151,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Regular Practice and Assessments
                       </li>
                       <li>
                         {" "}
@@ -161,7 +159,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                       Doubt Clarification:
                       </li>
                       <li>
                         {" "}
@@ -169,7 +167,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                        Career Counseling:{" "}
                       </li>
                     </ul>
 
