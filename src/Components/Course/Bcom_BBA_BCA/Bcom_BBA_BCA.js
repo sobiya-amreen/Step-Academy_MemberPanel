@@ -139,12 +139,12 @@ const Bcom_BBA_BCA = () => {
                       Time - 10 am to 8 PM
                     </p>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      At itaque dolore libero corrupti! Itaque, delectus?
+                      Bachelor of Commerce (BCom) and Bachelor of Business Administration (BBA) are both popular undergraduate degree programs in the field of commerce and business administration.
+
                     </p>
                     <p>
-                      Modi sit dolor repellat esse! Sed necessitatibus itaque
-                      libero odit placeat nesciunt, voluptatum totam facere.
+                      We provide the best quality of lecturers
+
                     </p>
 
                     <ul className="ul-check primary list-unstyled mb-5">
@@ -154,7 +154,7 @@ const Bcom_BBA_BCA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Lorem ipsum dolor sit amet consectetur
+                        Experienced Faculty
                       </li>
                       <li>
                         {" "}
@@ -162,7 +162,8 @@ const Bcom_BBA_BCA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        consectetur adipisicing{" "}
+                        Mock Tests and Assessments
+                        {" "}
                       </li>
                       <li>
                         {" "}
@@ -170,7 +171,8 @@ const Bcom_BBA_BCA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sit dolor repellat esse
+                        Career Guidance
+
                       </li>
                       <li>
                         {" "}
@@ -178,7 +180,8 @@ const Bcom_BBA_BCA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Necessitatibus
+                        Case Study Workshops
+
                       </li>
                       <li>
                         {" "}
@@ -186,7 +189,7 @@ const Bcom_BBA_BCA = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Sed necessitatibus itaque{" "}
+                        Industry Workshops{" "}
                       </li>
                     </ul>
 
