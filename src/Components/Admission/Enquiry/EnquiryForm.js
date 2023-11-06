@@ -143,6 +143,8 @@ const EnquiryForm = () => {
             />
             <div className="error">{phoneError}</div>
           </div>
+        
+        
           <div>
             <h6 className="formLabel">email :</h6>
             <input
@@ -156,6 +158,8 @@ const EnquiryForm = () => {
             />
              <div className="error">{emailError}</div>
           </div>
+         
+         
           <div>
             <h6 className="formLabel">Class/Course :</h6>
             <input

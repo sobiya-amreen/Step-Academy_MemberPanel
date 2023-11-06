@@ -1,8 +1,6 @@
 import React from 'react'
 import './Navigation.css'
 import { Link } from 'react-router-dom'
-import DMIT_Career_Counseling from '../../Course/DMIT&Career_Counseling/DMIT_Career_Counseling'
-import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
@@ -41,24 +39,6 @@ const Navigation = () => {
 
 
 
-
-                            {/* <li>
-                                    <div className="dropdown">
-                                   <a className='dropdown-toggle' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    About Us
-                                   </a>
-                                   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                   <Link className="dropdown-item" to="/about_us">About Us</Link>
-                                   <Link className="dropdown-item" to="/why_choose_us">Why Choose Us</Link>
-                                  
-                                   </div>
-                                  </div>
-                            </li> */}
-
-
-
-
-
                             <li className='drop'>
                             <DropdownButton id="dropdown-item-button" title=" ABOUT US">
                              <Link onClick={scrollToTop}  to="/about_us">   About Us</Link>
@@ -93,7 +73,7 @@ const Navigation = () => {
 
                                     <li><Link onClick={scrollToTop} to="/contact">Contact Us</Link></li>
                                 </ul>
-                                {/* <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div> */}
+                               
     
                                 {/* <!-- Hamburger --> */}
     
@@ -107,25 +87,7 @@ const Navigation = () => {
                 </div>
             </div>
         </div>
-        {/* Header Content end */}
-        {/* <!-- Header Search Panel --> */}
-        {/* <div className="header_search_container">
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <div className="header_search_content d-flex flex-row align-items-center justify-content-end">
-                            <form action="#" className="header_search_form">
-                                <input type="search" className="search_input" placeholder="Search" required="required"/>
-                                <button className="header_search_button d-flex flex-column align-items-center justify-content-center">
-                                    <i className="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>			
-        </div> */}
-        {/* <!-- Header Search Panel end --> */}	
+      	
     </div>
   )
 }
