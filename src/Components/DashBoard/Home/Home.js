@@ -184,7 +184,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="event_body">
-                            <div className="event_title"><a href="#">uccess-Backed Results</a></div>
+                            <div className="event_title"><a href="#">Success-Backed Results</a></div>
                             <div className="event_subtitle">Proven track record of excellence.</div>
                         </div>
                     </div>
