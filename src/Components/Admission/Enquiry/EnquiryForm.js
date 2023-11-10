@@ -114,6 +114,7 @@ const EnquiryForm = () => {
 											<input type="email" className="contact_input" placeholder="E-mail" required="required"/>
 										</div> */}
             </div>
+            
           </div>
 
           <div>

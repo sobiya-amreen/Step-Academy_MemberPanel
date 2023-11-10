@@ -79,7 +79,7 @@ const Footer = () => {
                   <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
                   <a href="https://agastyatechasyst.com/" target="_blank">
                   AGASTYA
-TECHASYST INDIA PVT LTD
+                  TECHASYST INDIA PVT LTD
                   </a>
                   {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
                 </div>
