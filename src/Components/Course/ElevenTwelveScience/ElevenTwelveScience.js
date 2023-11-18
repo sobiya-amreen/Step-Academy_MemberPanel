@@ -17,7 +17,7 @@ const ElevenTwelveScience = () => {
         <div className="row">
           <div className="col">
             <div className="home_content text-center">
-              <div className="home_title">Eleven Twelve Science</div>
+              <div className="home_title">11th & 12th Science</div>
               {/* <div className="breadcrumbs">
                 <ul>
                   <li>

@@ -1,3 +1,10 @@
+.hed{
+    height: 85px;
+}
+.mr{
+    margin-top: 40px;
+}
+
 .formLinks{
     color: #fff;
 }
@@ -11,11 +18,18 @@
     color: #fff;
     margin: 5px;
 }
+.icons{
+    margin-left: 425px;
+}
 .phoneIcon{
     color: #ff6600;
     font-size: 40px;
     position: relative;
     left: 30px;
+}
+.phones{
+    position: absolute;
+    left: -20px;
 }
 .emailIcon{
     color: #ff6600;
@@ -23,3 +37,86 @@
     position: relative;
     left: 30px;
 }
+.emails{
+    margin-left: 5px;
+}
+.bor{
+    border-radius: 20px;
+    
+}
+.reg{
+    margin-right: 100px;
+}
+.whtsp{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.logoo{
+    height: 81px;
+    width: 240px;
+    margin-right: 250px;
+    display: flex;
+    flex-direction: row;
+    border:2px solid green;
+    padding-left: 1px;
+    margin-left: 5px;
+    margin-top: 29px;
+  
+}
+.butt{
+    color: white;
+    margin-top:5px;
+    height: 30px;
+    width: 300px;
+}
+.immg{
+    color: #25d366;
+}
+
+.immg:hover{
+    color: red;
+}
+.blink {
+     text-decoration: none;
+  animation: blink 0.7s infinite alternate;
+  /* color: green; Initial color */
+  } 
+  /* .blink {
+    animation: blinker .75s linear infinite;
+    color: white;
+    font-family: sans-serif;
+/* } */ 
+
+
+/* Adding a simple blink animation */
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+      color: #25d366;
+    }
+    50% {
+      opacity: 0;
+      color: red;
+    }
+  }
+  
+  /* Style for "Join Now" button */
+  button {
+    background-color: #25d366;
+    color: white;
+    /* padding: 5px 10px; */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 25px;
+    width: 100px;
+    margin-bottom: 5px;
+  }
+  
+  /* Hover effect for the button */
+  button:hover {
+    background-color: red;
+  }
+  

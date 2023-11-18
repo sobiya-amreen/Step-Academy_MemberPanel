@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div>
        {/* <!-- Header Content --> */}
-       <div className="header_container">
+       <div className="header_container ">
             <div className="container">
                 <div className="row">
                     <div className="col">
@@ -48,7 +48,7 @@ const Navigation = () => {
 
 
                                     
-                             <li><Link onClick={scrollToTop} to="/our_result">Our Result</Link></li>
+                             <li><Link onClick={scrollToTop} to="/Gallary">Gallary</Link></li>
 
 
 
