@@ -32,7 +32,7 @@ const OurResults = () => {
       return yourImageArray.filter(image => image.category === filter);
     }
   };
-
+// 
 
 // test
   return (
