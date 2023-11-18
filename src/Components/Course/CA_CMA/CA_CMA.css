@@ -1,0 +1,32 @@
+.main {
+
+    text-align: start;
+    flex-direction: column;
+    border: 2px solid gray;
+    margin: 70px;
+    padding: 20px;
+
+}
+
+table {
+    text-align: center;
+    margin-left: 15%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    /* Optional: Add padding for better visual appearance */
+}
+
+th {
+    border: 1px solid black;
+    padding: 8px;
+    /* Optional: Add padding for better visual appearance */
+}

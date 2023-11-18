@@ -5,65 +5,52 @@ import './AdmissionForm.css'
 
 
 const Form = () => {
- 
+
   const data = {
-    name:"",
-    phone:"",
-    email:"",
-    subject1:"",
-    subject2:"",
-    subject3:"",
-    subject4:"",
-    subject5:"",
-    subject6:"",
-    course1:"",
-    course2:"",
-    course3:"",
-    course4:"",
-    installmentInput1:"",
-    installmentInput2:"",
-    installment1Date1:"",
-    installment1Date2:"",
-    address:"",
-    image:""
+    name: "",
+    phone: "",
+    email: "",
+
+    course1: "",
+
   }
-	const [admissionuserData,setAdmissionUserData]=useState(data)
+  const [admissionuserData, setAdmissionUserData] = useState(data)
 
-	const resetForm = () => {
-		setAdmissionUserData(data); // Reset the admissionuserData state to its initial empty state
-	  };
-	  
+  const resetForm = () => {
+    setAdmissionUserData(data); // Reset the admissionuserData state to its initial empty state
+  };
 
-	const handleadmissionData = (e)=>{
-		setAdmissionUserData({...admissionuserData,[e.target.name]:e.target.value})
-	}
-	const saveUserAdmission=(e)=>{
-		e.preventDefault()
-	 axios.post("/admission",admissionuserData
-   
-  //  ,{
-  //   headers: {
-  //     "Content-Type": "multipart/form-data",
-  //   },
-  //  }
-   
-   
-   )
-		.then((res)=>{
-      console.log(admissionuserData);
-			console.log(res);
-			//  console.log(admissionuserData.name)
-			
-			if (res.status === 200) {
-				// Reset the form data after a successful submission
-				resetForm();
-			  }
 
-		})
-		.catch((err)=>{
-          console.log("This is the error",err);
-		})
-	}
+  const handleadmissionData = (e) => {
+    setAdmissionUserData({ ...admissionuserData, [e.target.name]: e.target.value })
+  }
+  const saveUserAdmission = (e) => {
+    e.preventDefault()
+    axios.post("/admission", admissionuserData
+
+      //  ,{
+      //   headers: {
+      //     "Content-Type": "multipart/form-data",
+      //   },
+      //  }
+
+
+    )
+      .then((res) => {
+        console.log(admissionuserData);
+        console.log(res);
+        //  console.log(admissionuserData.name)
+
+        if (res.status === 200) {
+          // Reset the form data after a successful submission
+          resetForm();
+        }
+
+      })
+      .catch((err) => {
+        console.log("This is the error", err);
+      })
+  }
 
   return (
     <div className="borderform">
@@ -75,8 +62,8 @@ const Form = () => {
           </div>
         </div>
 
-        <div>
         
+
 
           <div className="AdmitionFormInputs">
             <h6 className="formLabel">Name :</h6>
@@ -86,14 +73,15 @@ const Form = () => {
               placeholder="Enter your name"
               name="name"
               // required="required"
-               value={admissionuserData.name}
-               onChange={handleadmissionData}
-              
+              value={admissionuserData.name}
+              onChange={handleadmissionData}
+
             />
           </div>
+          <br/>
 
-       
-            <div>
+
+          <div className="AdmitionFormInputs">
             <h6 className="formLabel">Phone :</h6>
             <input
               type="number"
@@ -101,12 +89,13 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your Contact Number"
               // required="required"
-               value={admissionuserData.phone}
-               onChange={handleadmissionData}
+              value={admissionuserData.phone}
+              onChange={handleadmissionData}
             />
           </div>
-         
-            <div>
+          <br/>
+
+          <div className="AdmitionFormInputs">
             <h6 className="formLabel">email :</h6>
             <input
               type="email"
@@ -114,17 +103,17 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your email"
               // required="required"
-               value={admissionuserData.email}
-               onChange={handleadmissionData}
+              value={admissionuserData.email}
+              onChange={handleadmissionData}
             />
           </div>
-        
-
-          <div>
           <br/>
-            <h6 className="formLabel">Subject :</h6>
-            <br/>
-            <select
+
+          {/* <div>
+          <br/> */}
+          {/* <h6 className="formLabel">Subject :</h6> */}
+          {/* <br/> */}
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -133,22 +122,22 @@ const Form = () => {
                onChange={handleadmissionData}
               name="subject1"
             
-            >
-              <option value="">Subject 1</option>
+            > */}
+          {/* <option value="">Subject 1</option>
               <option value="Physics">Physics</option>
               <option value="Chemistr">Chemistry</option>
               <option value="Biology">Biology</option>
               <option value="English">English</option>
               <option value="Computer Science">Computer Science</option>
               <option value="Mathamatics">Mathamatics</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div>
 
          <br/>
 
-          <div>
-          
-            <select
+          <div> */}
+
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -165,14 +154,14 @@ const Form = () => {
               <option value="Biology">Biology</option>
               <option value="English">English</option>
               <option value="Computer Science">Computer Science</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div> */}
 
-          <br/>
+          {/* <br/> */}
 
-          <div>
-          
-            <select
+          {/* <div> */}
+
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -189,17 +178,17 @@ const Form = () => {
               <option value="Chemistry">Chemistry</option>
               <option value="English">English</option>
               <option value="Computer Science">Computer Science</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div> */}
 
 
 
 
-          <br/>
+          {/* <br/> */}
 
-<div>
+          {/* <div> */}
 
-  <select
+          {/* <select
     // type="number"
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
@@ -215,19 +204,19 @@ const Form = () => {
               <option value="Chemistry">Chemistry</option>
               <option value="Biology">Biology</option>
               <option value="Computer Science">Computer Science</option>
-  </select>
-</div>
+  </select> */}
+          {/* </div> */}
 
 
 
 
 
 
-<br/>
+          {/* <br/> */}
 
-<div>
+          {/* <div> */}
 
-  <select
+          {/* <select
     // type="number"
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
@@ -244,19 +233,19 @@ const Form = () => {
               <option value="Chemistry">Chemistry</option>
               <option value="Mathamatics">Mathamatics</option>
               <option value="Biology">Biology</option>
-  </select>
-</div>
+  </select> */}
+          {/* </div> */}
 
 
 
 
 
 
-<br/>
+          {/* <br/> */}
 
-<div>
+          {/* <div> */}
 
-  <select
+          {/* <select
     // type="number"
     className="contact_input formInputs"
     placeholder="Eneer Class/Course"
@@ -266,27 +255,27 @@ const Form = () => {
     name="subject6"
     
   > 
-  <option value="">Subject 6</option>
+                      <option value="">Subject 6</option>
               <option value="Physics">Physics</option>
                 <option value="English">English</option>
               <option value="Chemistry">Chemistry</option>
               <option value="Biology">Biology</option>
               <option value="Computer Science">Computer Science</option>
               <option value="Mathamatics">Mathamatics</option>
-  </select>
-</div>
+                  </select> */}
+          {/* </div> */}
 
 
 
 
 
-        
+
 
           {/*  cources start */}
-          <div>
-            <br/>
+          <div className="AdmitionFormInputs">
+          
             <h6 className="formLabel">Course :</h6>
-            <br/>
+            <br />
             <select
               // type="number"
               className="contact_input formInputs"
@@ -295,25 +284,25 @@ const Form = () => {
               name="course1"
               value={admissionuserData.course1}
               onChange={handleadmissionData}
-             
+
             >
               <option value="">Course 1</option>
               <option value="11th commerce all subject">11th commerce all subject</option>
               <option value="12th commerce all subject">12th commerce all subject</option>
               <option value="11th + 12th all subject">11th + 12th all subject</option>
               <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-             
+
             </select>
           </div>
 
 
 
-
+          {/* 
           <div>
-            <br/>
-            {/* <h6 className="formLabel">Course :</h6> */}
-            
-            <select
+            <br/> */}
+          {/* <h6 className="formLabel">Course :</h6> */}
+
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -328,15 +317,15 @@ const Form = () => {
                <option value="11th commerce all subject">11th commerce all subject</option>
               <option value="11th + 12th all subject">11th + 12th all subject</option>
               <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div>
 
 
           <div>
-            <br/>
-            {/* <h6 className="formLabel">Course :</h6> */}
-            
-            <select
+            <br/> */}
+          {/* <h6 className="formLabel">Course :</h6> */}
+
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -350,16 +339,16 @@ const Form = () => {
              <option value="11th commerce all subject">11th commerce all subject</option>
               <option value="12th commerce all subject">12th commerce all subject</option>
               <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div> */}
 
 
 
-          <div>
-            <br/>
-            {/* <h6 className="formLabel">Course :</h6> */}
-            
-            <select
+          {/* <div> */}
+          {/* <br/> */}
+          {/* <h6 className="formLabel">Course :</h6> */}
+
+          {/* <select
               // type="number"
               className="contact_input formInputs"
               placeholder="Eneer Class/Course"
@@ -368,20 +357,20 @@ const Form = () => {
               onChange={handleadmissionData}
               name="course4"
              
-            >
-              <option value="">Course 4</option>
+            > */}
+          {/* <option value="">Course 4</option>
               <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
               <option value="11th commerce all subject">11th commerce all subject</option>
               <option value="12th commerce all subject">12th commerce all subject</option>
               <option value="11th + 12th all subject">11th + 12th all subject</option>
-            </select>
-          </div>
+            </select> */}
+          {/* </div> */}
           {/* Course ends */}
 
 
 
           {/* installment start */}
-            <div className="installmentBox">
+          {/* <div className="installmentBox">
           <h6 className="label head installment">Installment :</h6>
 
        
@@ -394,8 +383,8 @@ const Form = () => {
               // left: '35%',
               // top: '30px'
             }}
-          >
-            <input
+          > */}
+          {/* <input
               type="text"
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 1"
@@ -403,9 +392,9 @@ const Form = () => {
                onChange={handleadmissionData}
               name="installmentInput1"
              
-            />
+            /> */}
 
-            <input
+          {/* <input
               type="text"
               className=" installmentcss registrationInstallmentInput"
               placeholder="Installment 2"
@@ -415,9 +404,9 @@ const Form = () => {
             
             />
             {/* <input type="date" className="course_input courseField  installmentcss" /> */}
-          </div>
+          {/* </div> */}
 
-          <div
+          {/* <div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -425,8 +414,8 @@ const Form = () => {
               position:"inherit",
               bottom:"35px"
             }}
-          >
-            <input type="date" 
+          > */}
+          {/* <input type="date" 
               value={admissionuserData.installmentDate1}
               onChange={handleadmissionData}
               name="installment1Date1" className="  installmentcss registrationInstallmentInput" />
@@ -436,10 +425,10 @@ const Form = () => {
                onChange={handleadmissionData}
               name="installment1Date2" className=" installmentcss registrationInstallmentInput" />
           </div>
-          </div>
+          </div> */}
 
-      
-           <div className="AdmitionFormInputs">
+
+          {/* <div className="AdmitionFormInputs">
             <h6 className="formLabel">Address :</h6>
             <input
               type="text"
@@ -450,11 +439,11 @@ const Form = () => {
                 onChange={handleadmissionData}
                name="address"
              
-            />
-          </div>
+            /> */}
+          {/* </div> */}
 
 
-          <div className="AdmitionFormInputs">
+          {/* <div className="AdmitionFormInputs">
             <h6 className="formLabel">Photo :</h6>
             <input
                type="file"
@@ -466,22 +455,22 @@ const Form = () => {
               name="image"
              
             />
-          </div>
+          </div> */}
 
-           <button type="button" 
-         onClick={saveUserAdmission}
-          className="contact_button registrationBotton">
-           <span>Submit</span>
-           <span className="button_arrow">
-            <i className="fa fa-angle-right" aria-hidden="true"></i>
-          </span>
+          <button type="button"
+            onClick={saveUserAdmission}
+            className="contact_button registrationBotton">
+            <span>Submit</span>
+            <span className="button_arrow">
+              <i className="fa fa-angle-right" aria-hidden="true"></i>
+            </span>
           </button>
           {/* remaining inputs */}
 
           <div />
-        </div>
-      </form>
+      </form >
     </div>
+  
   );
 };
 
