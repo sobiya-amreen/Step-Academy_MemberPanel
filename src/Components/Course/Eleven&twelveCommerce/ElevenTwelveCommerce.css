@@ -25,3 +25,11 @@
     height: 450px;
     width: 795px;
 }
+
+
+
+.carouselBox{
+    height: 30rem;
+
+    background-image: url(https://capslearning.org/assets/images/blogs/all-about-Std-11th&Std-12th-Commerce.jpeg);
+}

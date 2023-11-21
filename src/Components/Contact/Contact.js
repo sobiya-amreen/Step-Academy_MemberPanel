@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Footer from '../DashBoard/Footer/Footer'
 import ResponsiveMenu from '../DashBoard/ResponsiveMenu/ResponsiveMenu'
 import Header from '../DashBoard/Header/Header'
-
+import "./Contact.css"
 import axios, { Axios } from 'axios'
 
 
@@ -78,7 +78,7 @@ const Contact = () => {
 
 <ResponsiveMenu/>
 {/* <!-- Responsive menu --> */}
-   <div className='carouselBox'>
+   <div className='carouselBo'>
      {/* <img classNameName='aboutCarouselImage' src='https://images.unsplash.com/photo-1501290741922-b56c0d0884af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlYWNoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'/> */}
      <div className="row">
                  <div className="col">

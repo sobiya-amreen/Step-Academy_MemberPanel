@@ -32,9 +32,9 @@ const OurResults = () => {
       return yourImageArray.filter(image => image.category === filter);
     }
   };
-// 
 
-// test
+
+
   return (
     <div>
       <Header />
@@ -47,7 +47,7 @@ const OurResults = () => {
         <div className="row">
           <div className="col">
             <div className="home_content text-center">
-              <div className="home_title">Gallary</div>
+              {/* <div className="home_title">Gallary</div> */}
               {/* <div className="breadcrumbs">
 								<ul>
 									<li><a href="index.html">Home</a></li>
@@ -73,13 +73,13 @@ const OurResults = () => {
               <div>WELCOME TO OUR ACHIEVEMENTS</div>
               <div className="teachers_title text-center">Gallary</div>
 
-           <div className='filtbtn'>
-           <Stack  spacing={1} direction="row">
-                <button  onClick={() => setFilter('ALL')} className='buttons' variant="contained">ALL</button>
-                <button  onClick={() => setFilter('EVENTS')} className='buttons' variant="contained">EVENTS</button>
-                <button  onClick={() => setFilter('NEWS')} className='buttons' variant="contained">NEWS</button>
-                <button  onClick={() => setFilter('CLASSROOMS')} className='buttons' variant="contained">CLASSROOMS</button>
-              </Stack>
+              <div className='filtbtn'>
+                <Stack spacing={1} direction="row">
+                  <button onClick={() => setFilter('ALL')} className='buttons' variant="contained">ALL</button>
+                  <button onClick={() => setFilter('EVENTS')} className='buttons' variant="contained">EVENTS</button>
+                  <button onClick={() => setFilter('NEWS')} className='buttons' variant="contained">NEWS</button>
+                  <button onClick={() => setFilter('CLASSROOMS')} className='buttons' variant="contained">CLASSROOMS</button>
+                </Stack>
               </div>
 
 
@@ -198,6 +198,11 @@ const OurResults = () => {
                         className="teacher_image photoGalery"
                       />
                     </div>
+
+                  </div>
+
+                  <div className="frame">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/5AnSV9Nr37Q?si=y2PC2yM1HwaP8Jt5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                   </div>
 

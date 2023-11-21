@@ -3,6 +3,7 @@
     margin: 5px;
     
     height: 38rem;
+   
     /* background-color: red; */
     margin-top: -80px;
     
@@ -22,4 +23,14 @@
 .spokenEnglishCard{
     background-color: red;
 }
-
+@media screen and (max-width: 768px) {
+    .courses{
+       /* width: 350px; */
+    
+    }
+    .profileCarousel{
+        width: 750px;
+        margin-left: 40px;
+        
+    }
+}

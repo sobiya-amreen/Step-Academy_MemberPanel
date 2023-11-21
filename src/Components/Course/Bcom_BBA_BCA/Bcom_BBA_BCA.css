@@ -1,0 +1,18 @@
+.carouselBoxxx{
+    width: 100%;
+    height: 25rem;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.bmu.edu.in/wp-content/uploads/2019/03/BBA-or-BCom.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.Home{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 0.75;
+}

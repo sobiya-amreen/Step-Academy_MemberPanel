@@ -6,3 +6,16 @@
 .contact_map {
     height: 100%;
 }
+
+.carouselBo{
+    width: 100%;
+    height: 25rem;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.amoliinternational.com/images/query.jpg);
+    background-repeat: no-repeat;
+
+
+}
+

@@ -118,4 +118,10 @@ div.row.subjectSecondary {
         color: #ff6600;
     }
 
-    
+    @media screen and (max-width: 768px) {
+        .form{
+         margin-left: -400px;
+
+        }
+       
+    }

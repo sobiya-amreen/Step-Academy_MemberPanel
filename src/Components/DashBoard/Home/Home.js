@@ -300,20 +300,20 @@ const Home = () => {
 
 {/* <!-- Video --> */}
 
-{/* <div className="video">
+<div className="video">
     <div className="container">
         <div className="row">
             <div className="col">
                 <div className="video_container_outer">
                     <div className="video_container">
                        
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TcMFFvNVQ8o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tCjq3CG6YSo?si=lOFRam14TRbEunZ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> */}
+</div>
 
 {/* <!-- Join --> */}
 
