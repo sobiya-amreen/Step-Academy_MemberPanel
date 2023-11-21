@@ -7,7 +7,7 @@ const Footer = () => {
     window.scrollTo(0, 0)
 }
   return (
-    <div>
+    <div className="footerBackground">
       {/* footer start */}
       <div className="footer">
         <div className="container">

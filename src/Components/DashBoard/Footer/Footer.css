@@ -17,7 +17,7 @@ margin-right: -100px;
 .footer {
     width: 100%;
     height: 56vh;
-    background: #f2f1f8;
+    background: #ddd;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -26,3 +26,4 @@ margin-right: -100px;
         height: 230vh;
     }
 }
+
