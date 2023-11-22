@@ -1,0 +1,22 @@
+.carouuselBox{
+    width: 100%;
+    height: 25rem;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://vakilsearch.com/blog/wp-content/uploads/2022/04/shutterstock_1701834850-2-scaled.jpg);
+    background-repeat: no-repeat;
+}
+.home_tittle{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 0.75;
+}
+
+@media screen and (max-width: 768px) {
+.news_post_text {
+    margin-top: 170px;
+}
+
+}

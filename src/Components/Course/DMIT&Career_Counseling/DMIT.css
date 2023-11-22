@@ -1,0 +1,9 @@
+.ccarouselBox{
+    width: 100%;
+    height: 25rem;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://dmitcounseling.com/wp-content/uploads/2021/09/DMIT-counseling-in-Pune-900x.jpg);
+    background-repeat: no-repeat;
+}

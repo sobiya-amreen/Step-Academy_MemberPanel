@@ -3,7 +3,7 @@ import Footer from '../../DashBoard/Footer/Footer'
 import ResponsiveMenu from '../../DashBoard/ResponsiveMenu/ResponsiveMenu'
 import Header from '../../DashBoard/Header/Header'
 import { Link } from 'react-router-dom'
-
+import "./Spoken.css"
 const SpokenEnglish = () => {
   return (
     <div>
@@ -12,12 +12,12 @@ const SpokenEnglish = () => {
 
 <ResponsiveMenu/>
 {/* <!-- Responsive menu --> */}
-   <div className='carouselBox'>
+   <div className='carouseelBox'>
      {/* <img classNameName='aboutCarouselImage' src='https://images.unsplash.com/photo-1501290741922-b56c0d0884af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlYWNoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'/> */}
      <div className="row">
                  <div className="col">
                      <div className="home_content text-center">
-                         <div className="home_title">Spoken English</div>
+                         {/* <div className="home_title">Spoken English</div> */}
                          {/* <div className="breadcrumbs">
                              <ul>
                                  <li><a href="index.html">Home</a></li>

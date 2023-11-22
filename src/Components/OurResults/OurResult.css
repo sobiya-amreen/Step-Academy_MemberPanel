@@ -26,3 +26,9 @@
     background-color: rgb(255, 111, 58);
 }
 
+.frame{
+    /* margin-right: 20px; */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}

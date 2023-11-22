@@ -1,11 +1,24 @@
-.logoImage{
+.logoImage {
     height: 80px;
     width: 80px;
 }
-/* .dropdown{
-    color: #2c2b31;
-} */
 #dropdown-item-button{
+    padding-bottom: 26px;
+    margin-right: 10px;
+}
+/* .dropdown{
+      color: #2c2b31;
+  } */
+.display {
+
+    margin-left: 510px;
+}
+
+.navigation-menu {
+    margin-left: -165px;
+}
+
+#dropdown-item-button {
     background: #fff;
     border: none;
     border-radius: 0;
@@ -13,19 +26,147 @@
     font-size: 13px;
     font-weight: 600;
     line-height: 20px;
-    
+
 }
-#dropdown-item-button:hover{
+
+.dropdown-menu.show{
+    width: 220px;
+}
+
+#dropdown-item-button:hover {
     background-color: #ff8a00;
     color: #fff;
+
 }
 
+/* // navbar.css */
+.hamburger {
+    /* // removes default border on button element */
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* // positions the icon to the right and center aligns it vertically */
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
 
-    .dropdown-menu.show {
+.hamburger:hover {
+    background-color: orangered;
+}
+
+/* // navbar.css */
+
+
+
+/* // navbar.css */
+@media screen and (max-width: 768px) {
+    .hamburger {
         display: block;
-        width: 13rem;
+    }
+
+    .navigation-menu ul {
+        display: none;
+    }
+
+    .navigation-menu ul {
+        /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+        position: absolute;
+        top: 44px;
+        left: 0;
+        /* // stacks the li tags vertically  */
+        flex-direction: column;
+        /* // makes menu span full height and width */
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: white;
+        border-top: 1px solid black;
+    }
+
+    .navigation-menu li {
+        /* // centers link text and strips off margin */
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation-menu li a {
+        color: black;
+        /* // increases the surface area of the anchor tag to span the full width of the menu */
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #eee;
+    }
+
+    .navigation-menu ul {
+        /* previous styles */
+        dipslay: none;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+
+    .display {
+        margin-left: 100px;
     }
 
 
-
+    /* .navigation-menu{
     
+    width: 500px;
+    background-color: rgb(8, 59, 43);
+    color: red;
+    display: flex;
+    flex-direction: column;
+  } */
+    .navigation-menu.expanded ul {
+        /* background-color: aqua; */
+        height: 300px;
+        width: 600px;
+        /* background-color: rgb(8, 59, 43); */
+        /* color: red; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media {
+
+        display: flex;
+        flex-direction: column;
+        color: aqua;
+
+    }
+
+    .navigation-menu.expanded li {
+        /* background-color: aqua; */
+        height: 300px;
+        width: 600px;
+        /* background-color: rgb(8, 59, 43); */
+        /* color: red; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #dropdown-item-button {
+        height: 79px;
+        width: 600px;
+       
+    }
+    .react-multiple-carousel__arrow  {
+        display: none;
+    }
+    .dropdown-menu.show{
+        margin-left: 50px;
+        padding: 20px;
+    }
+}

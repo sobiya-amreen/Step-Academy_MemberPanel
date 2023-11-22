@@ -3,6 +3,7 @@ import Header from "../../DashBoard/Header/Header";
 import ResponsiveMenu from "../../DashBoard/ResponsiveMenu/ResponsiveMenu";
 import Footer from "../../DashBoard/Footer/Footer";
 import { Link } from "react-router-dom";
+import "./ElevenTwelveScience.css"
 
 const ElevenTwelveScience = () => {
   return (
@@ -12,12 +13,12 @@ const ElevenTwelveScience = () => {
 
       <ResponsiveMenu />
       {/* <!-- Responsive menu --> */}
-      <div className="carouselBox">
+      <div className="carouselBoxx">
         {/* <img classNameName='aboutCarouselImage' src='https://images.unsplash.com/photo-1501290741922-b56c0d0884af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlYWNoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'/> */}
         <div className="row">
           <div className="col">
             <div className="home_content text-center">
-              <div className="home_title">11th & 12th Science</div>
+              <div className="home_titlee">11th & 12th Science</div>
               {/* <div className="breadcrumbs">
                 <ul>
                   <li>

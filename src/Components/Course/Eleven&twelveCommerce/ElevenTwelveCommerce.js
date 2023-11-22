@@ -18,7 +18,7 @@ const ElevenTwelveCommerce = () => {
         <div className="row">
           <div className="col">
             <div className="home_content text-center">
-              <div className="home_title">11th & 12th Commerce</div>
+              {/* <div className="home_title">11th & 12th Commerce</div> */}
               {/* <div className="breadcrumbs">
                 <ul>
                   <li>

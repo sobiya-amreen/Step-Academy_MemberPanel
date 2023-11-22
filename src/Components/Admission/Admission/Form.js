@@ -54,7 +54,7 @@ const Form = () => {
 
   return (
     <div className="borderform">
-      <form >
+      <form className="form" >
         <div>
           <div className="row">
             <h4 className="registrationHeading">STEP ACADEMY</h4>

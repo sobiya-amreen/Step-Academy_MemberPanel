@@ -1,0 +1,15 @@
+.carouselBoxx {
+    width: 100%;
+    height: 25rem;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://www.sssi.in/uploads/featured-images/2022/02/CBSE-has-Changed-the-Curriculum-for-Science-Class-11-and-12.png);
+    background-repeat: no-repeat;
+}
+.home_titlee{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 0.75;
+}
