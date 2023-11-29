@@ -45,10 +45,11 @@ const Header = () => {
                                                 </li>
                                             </div>
 
-                                            <div className='reg mr'         >
+                                            {/* <div className='reg mr'         >
                                                 <Link to="/registration"> <div className="button join_button bor"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link>
     
-                                            </div>
+                                            </div> */}
+                                             <Link to="/registration"> <div className="button join_button headerregistration"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link>
 
                                            
 
@@ -57,24 +58,33 @@ const Header = () => {
                                         </ul>
 
                                         {/* <div className="top_bar_login ml-auto"> */}
-                                        <ul className='logoo '>
+                                        {/* <ul className='logoo '> */}
                                             {/* <Link to='/registration'> <li className='formLinks'>Register</li></Link> <span  className='slash'>/</span>
                                       <Link to='/login'> <li  className='formLinks'>Login</li></Link>  */}
 
-                                            <div>
-                                                <a href="https://wa.me/918329387441" target="_blank"> <img className='whtsp alignright blink' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png' /></a>
-                                            </div>
-                                            <div className='butt '>
-                                                <h7>CMA Foundation Batch</h7>
-                                                <br />
-                                                <a href="https://wa.me/918329387441" target="_blank" className='immg blink ' >Join our whatsapp group</a>
-                                                <button className='blink '>Join Now</button>
-                                            </div>
-                                            
+                                            {/* <div>
+                                               <img className='whtsp alignright blink' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png'/>
+                                            </div> */}
 
-                                        </ul>
+                                            {/* <div className='butt'>
+                                               
+                                                <br />
+                                                <br/> 
+                                                <a href="https://wa.me/918329387441" target="_blank" className='immg blink' >Join our whatsapp group</a>
+                                                <div className='blink '>Join Now</div>
+                                            </div> */}
+
+                                        {/* </ul> */}
+
+
                                         <div>
                                         <li className='icons'>
+
+
+                                        <a className='whatsupheader blink' href="https://wa.me/918329387441" target="_blank"> <span className='whatsupheading '>Join Whatsup group</span>
+                                                 <i className="fa fa-whatsapp headerWhatsupIcon" aria-hidden="true"></i>
+                                          </a>
+
                                                 <a href="https://www.facebook.com/stepsacademypune?mibextid=b06tZ0" target="_blank" >
                                                     <i className="fa fa-facebook socialicons" aria-hidden="true"></i>
                                                 </a>

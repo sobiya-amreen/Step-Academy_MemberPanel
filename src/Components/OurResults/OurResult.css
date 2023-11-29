@@ -11,24 +11,12 @@
 /* .photoGalery:hover{
     z-index: 1000;
 } */
-.filtbtn{
-   margin-left: 28%;
-   margin-top: 30px;
-}
 
-.buttons{
-    color: white;
-    background-color: gray;
-    height: 35px;
-    width: 130px;
-}
-.buttons:hover{
-    background-color: rgb(255, 111, 58);
-}
 
-.frame{
-    /* margin-right: 20px; */
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
+.filterButtons{
+   margin: 10px;
+   height: 40px;
+}
+.stepsButton{
+    width: 150px;
 }

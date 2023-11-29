@@ -9,48 +9,64 @@ export const bannerData = [
 
 export const yourImageArray = [
    
-    'images/result3.jpg',
-    'images/result4.jpg',
-    'images/result5.jpg',
-    'images/result6.jpg',
-    'images/result7.jpg',
-    'images/result8.jpg',
-    'images/result9.jpg',
-    'images/result10.jpg',
-    'images/result11.jpg',
-    'images/result12.jpg',
-    'images/result13.jpg',
-    'images/result14.jpg',
-    'images/result15.jpg',
-    'images/result17.jpg',
-    'images/result19.jpg',
-    'images/result20.jpg',
-    'images/result21.jpg',
-    'images/result22.jpg',
-    'images/result16.jpg',
-    'images/result18.jpg',
-    'images/result1.jpg',
-    'images/result2.jpg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-10-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-8-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-7-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-6-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-5-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/Steps-gallery-2-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-11-min-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-3-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-4-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-16-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-14-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-1-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-15-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-12-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2020/08/steps-gallery-17-min.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.55-PM.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.56-PM.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.57-PM.jpeg',
-    // 'https://stepsacademy.co.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-19-at-12.05.58-PM.jpeg',
-    // Add more image URLs as needed
+    'image/news1.jpg',
+    'image/news2.jpg',
+    'image/news3.jpg',
+    'image/news4.jpg',
+    'image/news5.jpg',
+   
+    'image/event3.jpg',
+    'image/event4.jpg',
+    'image/event5.jpg',
+    'image/event6.jpg',
+    'image/event7.jpg',
+    'image/event1.jpg',
+    'image/event2.jpg',
+
+
+
+    'image/step1.jpg',
+    'image/step2.jpg',
+    'image/step3.jpg',
+    'image/step4.jpg',
+    'image/step5.jpg',
+    'image/step6.jpg',
+    'image/step7.jpg',
+    'image/step8.jpg',
+    'image/step9.jpg',
+    'image/step10.jpg',
+    'image/step11.jpg',
+    'image/step12.jpg',
+    'image/step13.jpg',
+    'image/step14.jpg',
+    'image/step15.jpg',
+    'image/step16.jpg',
+    'image/step17.jpg',
+    'image/step18.jpg',
+    'image/step19.jpg',
+    'image/step20.jpg',
+    
+
+
+
+    
+     
+
+
+
+    
+    // 'images/result15.jpg',
+    // 'images/result17.jpg',
+    // 'images/result19.jpg',
+    // 'images/result20.jpg',
+    // 'images/result21.jpg',
+    // 'images/result22.jpg',
+    // 'images/result16.jpg',
+    // 'images/result18.jpg',
+    // 'images/result1.jpg',
+    // 'images/result2.jpg',
+    
+  
   ];
   
   
