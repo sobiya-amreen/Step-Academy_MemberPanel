@@ -110,9 +110,7 @@ const OurResults = () => {
               >
                 Step Academy
               </Button>
-              {/*  */}
-              {/*  */}
-              {/*  */}
+             
 				</div>
 			</div>
 			<div className="row teachers_row">

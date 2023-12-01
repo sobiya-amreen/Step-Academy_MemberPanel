@@ -56,6 +56,10 @@ const CA_CMA = () => {
 
           {/* <a> <img src="https://www.shutterstock.com/image-vector/check-mark-valid-seal-icon-260nw-1028473135.jpg" />              </a> */}
           <p>Duration : 24 weeks</p>
+          <p>Teacher :</p>
+          <p> Anmol shinde</p>
+          <p> Anmol shinde</p>
+          <p>Sandesh Jain</p>
 
         </div>
         <hr />
@@ -157,6 +161,11 @@ const CA_CMA = () => {
         <p>Once the above registration process is completed the Study Material will be dispatch to the candidates through the Centralised Dispatch System (CDS).</p>
 
         <h5>Duration of Study Period for CA Foundation.</h5>
+        <p>Daily 8 hour classes</p>
+        <p>All subjects for 11th and 12th commerce + CA/CS/CMS foundation batch for 20 students</p>
+        <p>More than batch [6 am to 6 pm]</p>
+        <p>Rivision batch [De dhakka] batch</p>
+
 
         <p>
           Once your registration is done start preparing rigorously for the CA Foundation exams. Don’t just think to crack the exam instead of it prepare to achieve AIR. Work hard with strong determination and passion from the beginning so that you can crack every level of CA exam in the first attempt.

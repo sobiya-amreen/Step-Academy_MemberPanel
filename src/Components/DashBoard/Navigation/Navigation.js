@@ -101,7 +101,6 @@ const Navigation = () => {
 
                                             <li><Link onClick={scrollToTop} to="/contact">Contact Us</Link></li>
                                         </ul>
-                                        
                                     </div>
                                     {/* <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div> */}
 

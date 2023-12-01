@@ -2,7 +2,6 @@ import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import { Button } from 'react-bootstrap'
 
 const Header = () => {
     return (
@@ -43,20 +42,14 @@ const Header = () => {
                                                 </li>
                                                 <li>
                                                     <div>stepsacademy2129@gmail.com</div>
-                                                    
                                                 </li>
-                                                
-                                                
                                             </div>
 
                                             {/* <div className='reg mr'         >
                                                 <Link to="/registration"> <div className="button join_button bor"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link>
     
                                             </div> */}
-                                        
-
-                                             <Link to="/registration"> <div className="button join_button headerRegistration"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link>
-                                             
+                                             <Link to="/registration"> <div className="button join_button headerregistration"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link>
 
                                            
 
@@ -86,8 +79,7 @@ const Header = () => {
 
                                         <div>
                                         <li className='icons'>
-                                        
-                                  
+
 
                                         <a className='whatsupheader blink' href="https://wa.me/918329387441" target="_blank"> <span className='whatsupheading '>Join Whatsup group</span>
                                                  <i className="fa fa-whatsapp headerWhatsupIcon" aria-hidden="true"></i>
