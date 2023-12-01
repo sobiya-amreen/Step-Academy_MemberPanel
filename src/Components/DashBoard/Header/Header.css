@@ -176,6 +176,9 @@
     /* background-color: green; */
     /* padding: 10px; */
   }
-  .headerregistration{
+ 
+  .headerRegistration{
+    z-index: 1000;
     margin-bottom: 15px;
+    
   }
