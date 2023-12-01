@@ -116,18 +116,22 @@ const ElevenTwelveScience = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      Sandesh Mukhedkar
+                      <p>professor Ashvin Gudsurkar</p>
+                      <p>professor Deepali Nargunde</p>
+                      <p>professor Prasad kulkarni</p>
+                      <p>professor Dipak Kumar</p>
                     </p>
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
                       Time - 10 am to 8 PM
                     </p>
-                    <p>
+                    {/* <p>
                     11th and 12th grades are a critical phase in a student's education, especially for those pursuing science streams, as they provide the foundation for higher education and careers in science and technology.
                     </p>
                     <p>
                     Students typically choose between science streams such as Physics, Chemistry, Biology (PCB), or Physics, Chemistry, Mathematics (PCM).
-                    </p>
+                    </p> */}
+
 
                     <ul className="ul-check primary list-unstyled mb-5">
                       <li>
@@ -136,7 +140,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Experienced Teachers
+                        11th 12th regular batch
                       </li>
                       <li>
                         {" "}
@@ -144,7 +148,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Comprehensive Curriculum{" "}
+                        Physics{" "}
                       </li>
                       <li>
                         {" "}
@@ -152,7 +156,7 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Regular Practice and Assessments
+                        Chemistry
                       </li>
                       <li>
                         {" "}
@@ -160,16 +164,64 @@ const ElevenTwelveScience = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                       Doubt Clarification:
+                      Mathematics
                       </li>
                       <li>
                         {" "}
                         <i
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
-                        ></i>{" "}
-                        Career Counseling:{" "}
+                        >
+                          </i>{" "}
+                        Biology
                       </li>
+
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        English
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        IT
+                      </li>
+
+
+                      {/* cet ponts start */}
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        All Subjects
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        MCQ pattern prepration
+                      </li>
+                      {/* cet ends */}
+
+
+
                     </ul>
 
                     <p>

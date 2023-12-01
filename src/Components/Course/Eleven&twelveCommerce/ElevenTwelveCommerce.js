@@ -128,18 +128,30 @@ const ElevenTwelveCommerce = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      Sandesh Mukhedkar
+                      professor Ashwin Gudsurkar
+                    </p>
+                    <p>
+                     
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                     
+                      professor Savita Jadhav
+                    </p>
+                    <p>
+                      
+                      professor pradeep bhawar
                     </p>
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
                       Time - 10 am to 8 PM
                     </p>
-                    <p>
+                    {/* <p>
                     11th and 12th grades are crucial for students pursuing commerce as these lay the foundation for future studies and careers in business, finance, and economics.
                     </p>
                     <p>
                     Students in the commerce stream develop skills in financial management, accounting, business principles, and economic analysis.
-                    </p>
+                    </p> */}
 
                     <ul className="ul-check primary list-unstyled mb-5">
                       <li>
@@ -148,7 +160,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Experienced Faculty
+                        11th abd 12th Regular Batch
                       </li>
                       <li>
                         {" "}
@@ -156,7 +168,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Comprehensive Curriculum{" "}
+                        Accounts{" "}
                       </li>
                       <li>
                         {" "}
@@ -164,7 +176,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Regular Assessments
+                        Economics
                       </li>
                       <li>
                         {" "}
@@ -172,7 +184,7 @@ const ElevenTwelveCommerce = () => {
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
-                        Doubt Resolution
+                        Organization Of Commerce Management
                       </li>
                       <li>
                         {" "}
