@@ -59,7 +59,7 @@
 }
 
 .hamburger:hover {
-    background-color: orangered;
+    background-color: #fff;
 }
 
 /* // navbar.css */
@@ -70,6 +70,7 @@
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
+        background-color: #fff;
     }
 
     .navigation-menu ul {

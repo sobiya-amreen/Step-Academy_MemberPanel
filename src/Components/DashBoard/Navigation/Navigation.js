@@ -111,7 +111,7 @@ const Navigation = () => {
                                         onClick={() => {
                                             setIsNavExpanded(!isNavExpanded)
                                         }}
-                                    >
+                                    ><i class="fa fa-bars" aria-hidden="true"></i>
                                         {/* hamburger svg code... */}
                                     </button>
 
