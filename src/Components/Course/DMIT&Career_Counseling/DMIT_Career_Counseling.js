@@ -189,7 +189,7 @@ const DMIT_Career_Counseling = () => {
           </div>
 
           {/* <!-- Pagination --> */}
-          <div className="row">
+          {/* <div className="row">
             <div className="col">
               <div className="news_pagination">
                 <ul>
@@ -211,7 +211,7 @@ const DMIT_Career_Counseling = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Course Ends */}

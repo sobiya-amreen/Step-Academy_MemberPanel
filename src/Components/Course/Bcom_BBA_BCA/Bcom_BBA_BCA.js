@@ -134,7 +134,19 @@ const Bcom_BBA_BCA = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      Sandesh Mukhedkar
+                      professor Ashwin Gudsurkar
+                    </p>
+                    <p>
+                     
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                     
+                      professor Savita Jadhav
+                    </p>
+                    <p>
+                      
+                      professor pradeep bhawar
                     </p>
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
