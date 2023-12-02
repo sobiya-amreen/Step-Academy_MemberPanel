@@ -100,7 +100,23 @@ const MBA_MCOM = () => {
                             <span>Course Details</span>
                         </h2>
                         
-                        <p><strong className="text-black d-block">Teacher:</strong>Sandesh Mukhedkar</p>
+                        {/* <p><strong className="text-black d-block">Teacher:</strong>Sandesh Mukhedkar</p> */}
+                        <p>
+                      <strong className="text-black d-block">Teacher:</strong>
+                      professor Ashwin Gudsurkar
+                    </p>
+                    <p>
+                     
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                     
+                      professor Savita Jadhav
+                    </p>
+                    <p>
+                      
+                      professor pradeep bhawar
+                    </p>
                         <p className="mb-5"><strong className="text-black d-block">Hours:</strong>Time - 10 am to 8 PM</p>
                         <p>M.BA (Master of Business Administration) is a postgraduate program focused on business and management, covering areas such as finance, marketing, leadership, and strategy.</p>
                         <p>M.COM (Master of Commerce) is a postgraduate program that explores commerce-related fields, including economics, accounting, and business studies.</p>
@@ -128,7 +144,7 @@ const MBA_MCOM = () => {
         </div>
 
         {/* <!-- Pagination --> */}
-        <div className="row">
+        {/* <div className="row">
             <div className="col">
                 <div className="news_pagination">
                     <ul>
@@ -140,7 +156,7 @@ const MBA_MCOM = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> */}
 
     </div>
 </div>

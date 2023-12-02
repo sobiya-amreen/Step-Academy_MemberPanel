@@ -286,11 +286,15 @@ const Form = () => {
               onChange={handleadmissionData}
 
             >
-              <option value="">Course 1</option>
-              <option value="11th commerce all subject">11th commerce all subject</option>
-              <option value="12th commerce all subject">12th commerce all subject</option>
-              <option value="11th + 12th all subject">11th + 12th all subject</option>
-              <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
+              <option value="">Courses</option>
+              <option value="11th commerce all subject">11th & 12th Commerce</option>
+              <option value="12th commerce all subject">11th & 12th Science CET, JEE</option>
+              <option value="11th + 12th all subject">BCOM, BBA, BC</option>
+              <option value="11th + 12th + CA/CS/CMA foundation">MBA, MCOM</option>
+              <option value="CA, CMA">CA, CMA</option>
+              <option value="DMIT & CAREER COUNSELING">DMIT & CAREER COUNSELING</option>
+              <option value="spoken English">SPOKEN ENGLISH</option>
+              <option value="COSTING & TAXES">COSTING & TAXES</option>
 
             </select>
           </div>
