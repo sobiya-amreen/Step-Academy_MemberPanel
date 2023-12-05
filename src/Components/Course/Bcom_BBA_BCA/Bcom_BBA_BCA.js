@@ -134,20 +134,29 @@ const Bcom_BBA_BCA = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      professor Ashwin Gudsurkar
+                      CA Anmol Shinde
                     </p>
                     <p>
                      
-                      professor Bhakti Joshi
+                      CMA Amit Nikam
                     </p>
                     <p>
                      
-                      professor Savita Jadhav
+                      CA Sandesh Jain
                     </p>
                     <p>
                       
-                      professor pradeep bhawar
+                      professor Ashwind Gudsurkar
                     </p>
+                    <p>
+                      
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                      
+                      professor Savita Jadhav
+                    </p>
+                  
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
                       Time - 10 am to 8 PM

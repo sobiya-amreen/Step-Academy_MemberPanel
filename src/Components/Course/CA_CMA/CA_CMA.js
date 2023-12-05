@@ -57,10 +57,31 @@ const CA_CMA = () => {
           {/* <a> <img src="https://www.shutterstock.com/image-vector/check-mark-valid-seal-icon-260nw-1028473135.jpg" />              </a> */}
           <p>Duration : 24 weeks</p>
           <p>Teacher :</p>
-          <p> Anmol shinde</p>
-          <p> Anmol shinde</p>
-          <p>Sandesh Jain</p>
-
+          <p>
+                      <strong className="text-black d-block">Teacher:</strong>
+                      CA Anmol Shinde
+                    </p>
+                    <p>
+                     
+                      CMA Amit Nikam
+                    </p>
+                    <p>
+                     
+                      CA Sandesh Jain
+                    </p>
+                    <p>
+                      
+                      professor Ashwind Gudsurkar
+                    </p>
+                    <p>
+                      
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                      
+                      professor Savita Jadhav
+                    </p>
+                  
         </div>
         <hr />
         <h5>CA Foundation Examination Complete Course Guide</h5>
