@@ -165,6 +165,13 @@ const ElevenTwelveCommerce = () => {
                         ></i>{" "}
                         More then Batch  [6 AM To 6 PM]
                       </li>
+                      <li><strong>Revision Batch </strong></li>
+
+                      <li>(De Dhakka) Batch</li>
+
+                      <li><strong>11th & 12th + JEE/NEET </strong></li>
+                      <li>All Subject</li>
+                      <li>MCQ Pattern + Numerical Value Questions</li>
                 
                  
                  

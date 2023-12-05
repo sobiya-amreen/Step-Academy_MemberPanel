@@ -94,7 +94,10 @@ const ElevenTwelveScience = () => {
                       </p> */}
 
 
-<ul className="ul-check primary list-unstyled mb-5">
+               <ul className="ul-check primary list-unstyled mb-5">
+                <li>
+                  <strong>11th & 12 Science</strong>
+                </li>
                       <li>
                         {" "}
                         <i
@@ -159,8 +162,10 @@ const ElevenTwelveScience = () => {
                       </li>
 
 
-                      {/* cet ponts start */}
-                      <li>
+                     
+                      <li><strong>11th & 12th + CET</strong></li>
+                       {/* cet ponts start */}
+                       <li>
                         {" "}
                         <i
                           className="fa fa-angle-right Arrow"
@@ -179,8 +184,8 @@ const ElevenTwelveScience = () => {
                           </i>{" "}
                         MCQ pattern prepration
                       </li>
-                      {/* cet ends */}
 
+                      
 
 
                     </ul>
