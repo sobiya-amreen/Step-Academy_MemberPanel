@@ -162,8 +162,29 @@ const Costing_Taxes = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      Sandesh Mukhedkar
+                      CA Anmol Shinde
                     </p>
+                    <p>
+                     
+                      CMA Amit Nikam
+                    </p>
+                    <p>
+                     
+                      CA Sandesh Jain
+                    </p>
+                    <p>
+                      
+                      professor Ashwind Gudsurkar
+                    </p>
+                    <p>
+                      
+                      professor Bhakti Joshi
+                    </p>
+                    <p>
+                      
+                      professor Savita Jadhav
+                    </p>
+                  
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
                       Time - 10 am to 8 PM

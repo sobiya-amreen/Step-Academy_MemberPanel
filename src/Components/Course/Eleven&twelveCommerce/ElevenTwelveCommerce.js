@@ -64,7 +64,7 @@ const ElevenTwelveCommerce = () => {
                       </div>
                     </div>
                     <div className="news_post_text">
-                      <p>
+                      {/* <p>
                         {" "}
                         Steps Academy Coaching Classes has Been the Best
                         Commerce Class in Pimpri- Chinchwad Over the Last 10
@@ -85,7 +85,55 @@ const ElevenTwelveCommerce = () => {
                         Train the Students and Guide Them to Choose Their
                         Careers in the Upcoming Years According to the Skills
                         They Are Good At.
-                      </p>
+                      </p> */}
+
+
+
+<ul className="ul-check primary list-unstyled mb-5">
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        11th abd 12th Regular Batch
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Accounts{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Economics
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Organization Of Commerce Management
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Study Materials{" "}
+                      </li>
+                    </ul>
+
+
+
                     </div>
                     {/* <div className="news_post_link">
                       <a href="#">Read More</a>
@@ -128,19 +176,31 @@ const ElevenTwelveCommerce = () => {
 
                     <p>
                       <strong className="text-black d-block">Teacher:</strong>
-                      professor Ashwin Gudsurkar
+                      CA Anmol Shinde
                     </p>
                     <p>
                      
+                      CMA Amit Nikam
+                    </p>
+                    <p>
+                     
+                      CA Sandesh Jain
+                    </p>
+                    <p>
+                      
+                      professor Ashwind Gudsurkar
+                    </p>
+                    <p>
+                      
                       professor Bhakti Joshi
                     </p>
                     <p>
-                     
+                      
                       professor Savita Jadhav
                     </p>
                     <p>
                       
-                      professor pradeep bhawar
+                      professor Pradeep Bhawar
                     </p>
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
