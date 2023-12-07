@@ -6,51 +6,82 @@ import './AdmissionForm.css'
 
 const Form = () => {
 
-  const data = {
+  const initialData = {
     name: "",
     phone: "",
     email: "",
-
     course1: "",
 
   }
-  const [admissionuserData, setAdmissionUserData] = useState(data)
+  const [admissionUserData, setAdmissionUserData] = useState(initialData);
+  const [errors, setErrors] = useState({});
 
-  const resetForm = () => {
-    setAdmissionUserData(data); // Reset the admissionuserData state to its initial empty state
+
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {};
+
+    // Validate Name
+    if (!admissionUserData.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    // Validate Phone
+    if (!admissionUserData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+      isValid = false;
+    }
+
+    // Validate Email
+    if (!admissionUserData.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    }
+
+    // Validate Course
+    if (!admissionUserData.course1.trim()) {
+      newErrors.course1 = "Course selection is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
   };
 
+  const resetForm = () => {
+    setAdmissionUserData(initialData);
+    setErrors({});
+  };
 
   const handleadmissionData = (e) => {
-    setAdmissionUserData({ ...admissionuserData, [e.target.name]: e.target.value })
-  }
+    setAdmissionUserData({ ...admissionUserData, [e.target.name]: e.target.value });
+  };
+
   const saveUserAdmission = (e) => {
-    e.preventDefault()
-    axios.post("/admission", admissionuserData
+    e.preventDefault();
 
-      //  ,{
-      //   headers: {
-      //     "Content-Type": "multipart/form-data",
-      //   },
-      //  }
+    if (validateForm()) {
+      axios
+        .post("/admission", admissionUserData)
+        .then((res) => {
+          console.log(admissionUserData);
+          console.log(res);
 
+          if (res.status === 200) {
+            // Reset the form data after a successful submission
+            resetForm();
+            window.alert("Data submitted successfully!");
+          }
+        })
+        .catch((err) => {
+          console.log("This is the error", err);
+        });
+    }
+  };
 
-    )
-      .then((res) => {
-        console.log(admissionuserData);
-        console.log(res);
-        //  console.log(admissionuserData.name)
-
-        if (res.status === 200) {
-          // Reset the form data after a successful submission
-          resetForm();
-        }
-
-      })
-      .catch((err) => {
-        console.log("This is the error", err);
-      })
-  }
+  
 
   return (
     <div className="borderform">
@@ -73,10 +104,11 @@ const Form = () => {
               placeholder="Enter your name"
               name="name"
               // required="required"
-              value={admissionuserData.name}
+              value={admissionUserData.name}
               onChange={handleadmissionData}
 
             />
+             {errors.name && <div className="error">{errors.name}</div>}
           </div>
           <br/>
 
@@ -89,9 +121,10 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your Contact Number"
               // required="required"
-              value={admissionuserData.phone}
+              value={admissionUserData.phone}
               onChange={handleadmissionData}
             />
+             {errors.phone && <div className="error">{errors.phone}</div>}
           </div>
           <br/>
 
@@ -103,168 +136,14 @@ const Form = () => {
               className="contact_input formInputs"
               placeholder="Enter your email"
               // required="required"
-              value={admissionuserData.email}
+              value={admissionUserData.email}
               onChange={handleadmissionData}
             />
+             {errors.email && <div className="error">{errors.email}</div>}
           </div>
           <br/>
 
-          {/* <div>
-          <br/> */}
-          {/* <h6 className="formLabel">Subject :</h6> */}
-          {/* <br/> */}
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-               value={admissionuserData.subject1}
-               onChange={handleadmissionData}
-              name="subject1"
-            
-            > */}
-          {/* <option value="">Subject 1</option>
-              <option value="Physics">Physics</option>
-              <option value="Chemistr">Chemistry</option>
-              <option value="Biology">Biology</option>
-              <option value="English">English</option>
-              <option value="Computer Science">Computer Science</option>
-              <option value="Mathamatics">Mathamatics</option>
-            </select> */}
-          {/* </div>
-
-         <br/>
-
-          <div> */}
-
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-               value={admissionuserData.subject2}
-               onChange={handleadmissionData}
-              name="subject2"
-             
-            >
-              <option value="">Subject 2</option>
-               <option value="Mathamatics">Mathamatics</option>
-              <option value="Chemistry">Chemistry</option>
-            <option value="Physics">Physics</option>
-              <option value="Biology">Biology</option>
-              <option value="English">English</option>
-              <option value="Computer Science">Computer Science</option>
-            </select> */}
-          {/* </div> */}
-
-          {/* <br/> */}
-
-          {/* <div> */}
-
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-               value={admissionuserData.subject3}
-               onChange={handleadmissionData}
-              name="subject3"
-              
-            >
-              <option value="">Subject 3</option>
-              <option value="Biology">Biology</option>
-              <option value="Mathamatics">Mathamatics</option>
-              <option value="Physics">Physics</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="English">English</option>
-              <option value="Computer Science">Computer Science</option>
-            </select> */}
-          {/* </div> */}
-
-
-
-
-          {/* <br/> */}
-
-          {/* <div> */}
-
-          {/* <select
-    // type="number"
-    className="contact_input formInputs"
-    placeholder="Eneer Class/Course"
-    // required="required"
-     value={admissionuserData.subject4}
-     onChange={handleadmissionData}
-    name="subject4"
-   
-  >           <option value="">Subject 4</option>
-              <option value="English">English</option>
-              <option value="Physics">Physics</option>
-              <option value="Mathamatics">Mathamatics</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="Biology">Biology</option>
-              <option value="Computer Science">Computer Science</option>
-  </select> */}
-          {/* </div> */}
-
-
-
-
-
-
-          {/* <br/> */}
-
-          {/* <div> */}
-
-          {/* <select
-    // type="number"
-    className="contact_input formInputs"
-    placeholder="Eneer Class/Course"
-    // required="required"
-     value={admissionuserData.subject5}
-     onChange={handleadmissionData}
-    name="subject5"
-   
-  > 
-                 <option value="">Subject 5</option>
-              <option value="Computer Science">Computer Science</option>
-                <option value="English">English</option>
-              <option value="Physics">Physics</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="Mathamatics">Mathamatics</option>
-              <option value="Biology">Biology</option>
-  </select> */}
-          {/* </div> */}
-
-
-
-
-
-
-          {/* <br/> */}
-
-          {/* <div> */}
-
-          {/* <select
-    // type="number"
-    className="contact_input formInputs"
-    placeholder="Eneer Class/Course"
-    // required="required"
-     value={admissionuserData.subject6}
-     onChange={handleadmissionData}
-    name="subject6"
-    
-  > 
-                      <option value="">Subject 6</option>
-              <option value="Physics">Physics</option>
-                <option value="English">English</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="Biology">Biology</option>
-              <option value="Computer Science">Computer Science</option>
-              <option value="Mathamatics">Mathamatics</option>
-                  </select> */}
-          {/* </div> */}
-
+         {/* here is commented fields */}
 
 
 
@@ -282,7 +161,7 @@ const Form = () => {
               placeholder="Eneer Class/Course"
               // required="required"
               name="course1"
-              value={admissionuserData.course1}
+              value={admissionUserData.course1}
               onChange={handleadmissionData}
 
             >
@@ -297,170 +176,12 @@ const Form = () => {
               <option value="COSTING & TAXES">COSTING & TAXES</option>
 
             </select>
+            {errors.course1 && <div className="error">{errors.course1}</div>}
           </div>
 
 
 
-          {/* 
-          <div>
-            <br/> */}
-          {/* <h6 className="formLabel">Course :</h6> */}
-
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-              value={admissionuserData.course2}
-              onChange={handleadmissionData}
-              name="course2"
-            
-            >
-              <option value="">Course 2</option>
-              <option value="12th commerce all subject">12th commerce all subject</option>
-               <option value="11th commerce all subject">11th commerce all subject</option>
-              <option value="11th + 12th all subject">11th + 12th all subject</option>
-              <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-            </select> */}
-          {/* </div>
-
-
-          <div>
-            <br/> */}
-          {/* <h6 className="formLabel">Course :</h6> */}
-
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-              name="course3"
-              value={admissionuserData.course3}
-              onChange={handleadmissionData}
-            >
-              <option value="">Course 3</option>
-              <option value="11th + 12th all subject">11th + 12th all subject</option>
-             <option value="11th commerce all subject">11th commerce all subject</option>
-              <option value="12th commerce all subject">12th commerce all subject</option>
-              <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-            </select> */}
-          {/* </div> */}
-
-
-
-          {/* <div> */}
-          {/* <br/> */}
-          {/* <h6 className="formLabel">Course :</h6> */}
-
-          {/* <select
-              // type="number"
-              className="contact_input formInputs"
-              placeholder="Eneer Class/Course"
-              // required="required"
-              value={admissionuserData.course4}
-              onChange={handleadmissionData}
-              name="course4"
-             
-            > */}
-          {/* <option value="">Course 4</option>
-              <option value="11th + 12th + CA/CS/CMA foundation">11th + 12th + CA/CS/CMA foundation</option>
-              <option value="11th commerce all subject">11th commerce all subject</option>
-              <option value="12th commerce all subject">12th commerce all subject</option>
-              <option value="11th + 12th all subject">11th + 12th all subject</option>
-            </select> */}
-          {/* </div> */}
-          {/* Course ends */}
-
-
-
-          {/* installment start */}
-          {/* <div className="installmentBox">
-          <h6 className="label head installment">Installment :</h6>
-
-       
-          <div 
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              position: "absolute",
-               bottom:"32px"
-              // left: '35%',
-              // top: '30px'
-            }}
-          > */}
-          {/* <input
-              type="text"
-              className=" installmentcss registrationInstallmentInput"
-              placeholder="Installment 1"
-               value={admissionuserData.installmentInput1}
-               onChange={handleadmissionData}
-              name="installmentInput1"
-             
-            /> */}
-
-          {/* <input
-              type="text"
-              className=" installmentcss registrationInstallmentInput"
-              placeholder="Installment 2"
-               value={admissionuserData.installmentInput2}
-               onChange={handleadmissionData}
-              name="installmentInput2"
-            
-            />
-            {/* <input type="date" className="course_input courseField  installmentcss" /> */}
-          {/* </div> */}
-
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginLeft: "200px",
-              position:"inherit",
-              bottom:"35px"
-            }}
-          > */}
-          {/* <input type="date" 
-              value={admissionuserData.installmentDate1}
-              onChange={handleadmissionData}
-              name="installment1Date1" className="  installmentcss registrationInstallmentInput" />
-
-            <input type="date"
-               value={admissionuserData.installmentDate2}
-               onChange={handleadmissionData}
-              name="installment1Date2" className=" installmentcss registrationInstallmentInput" />
-          </div>
-          </div> */}
-
-
-          {/* <div className="AdmitionFormInputs">
-            <h6 className="formLabel">Address :</h6>
-            <input
-              type="text"
-              className="contact_input formInputs"
-              placeholder="Enter your Address"
-              // required="required"
-                value={admissionuserData.address}
-                onChange={handleadmissionData}
-               name="address"
-             
-            /> */}
-          {/* </div> */}
-
-
-          {/* <div className="AdmitionFormInputs">
-            <h6 className="formLabel">Photo :</h6>
-            <input
-               type="file"
-              className="contact_input formInputs"
-               value={admissionuserData.image}
-               onChange={handleadmissionData}
-              // placeholder="Phone Number"
-              // required="required"
-              name="image"
-             
-            />
-          </div> */}
-
+        {/*  */}
           <button type="button"
             onClick={saveUserAdmission}
             className="contact_button registrationBotton">
