@@ -66,7 +66,7 @@ const ElevenTwelveScience = () => {
                       </div>
                     </div>
                     <div className="news_post_text">
-                      <p>
+                      {/* <p>
                         {" "}
                         Science Is an Academic Branch That Focuses on
                         Discovering New Concepts and Technologies. After 12th
@@ -91,49 +91,13 @@ const ElevenTwelveScience = () => {
                         for the Exam with Ease. The Tuitions Are a Perfect
                         Choice for All Those Who Want to Excel in Their
                         Competitive Examinations.
-                      </p>
-                    </div>
-                    {/* <div className="news_post_link">
-                      <a href="#">Read More</a>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* <!-- Sidebar --> */}
-            <div className="col-lg-4">
-              <div className="sidebar">
-                <div className="sidebar_search"></div>
-
-                {/* blog start */}
-                <div className="sidebar_latest_posts courseDetail">
-                  {/* <div className="sidebar_title">Latest Posts</div> */}
-                  <div className="latest_posts">
-                    <h2 className="section-title-underline mb-5">
-                      <span>Course Details</span>
-                    </h2>
-
-                    <p>
-                      <strong className="text-black d-block">Teacher:</strong>
-                      <p>professor Ashvin Gudsurkar</p>
-                      <p>professor Deepali Nargunde</p>
-                      <p>professor Prasad kulkarni</p>
-                      <p>professor Dipak Kumar</p>
-                    </p>
-                    <p className="mb-5">
-                      <strong className="text-black d-block">Hours:</strong>{" "}
-                      Time - 10 am to 8 PM
-                    </p>
-                    {/* <p>
-                    11th and 12th grades are a critical phase in a student's education, especially for those pursuing science streams, as they provide the foundation for higher education and careers in science and technology.
-                    </p>
-                    <p>
-                    Students typically choose between science streams such as Physics, Chemistry, Biology (PCB), or Physics, Chemistry, Mathematics (PCM).
-                    </p> */}
+                      </p> */}
 
 
-                    <ul className="ul-check primary list-unstyled mb-5">
+               <ul className="ul-check primary list-unstyled mb-5">
+                <li>
+                  <strong>11th & 12 Science</strong>
+                </li>
                       <li>
                         {" "}
                         <i
@@ -198,7 +162,144 @@ const ElevenTwelveScience = () => {
                       </li>
 
 
-                      {/* cet ponts start */}
+                     
+                      <li><strong>11th & 12th + CET</strong></li>
+                       {/* cet ponts start */}
+                       <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        All Subjects
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        MCQ pattern prepration
+                      </li>
+
+                      
+
+
+                    </ul>
+
+
+
+
+                    </div>
+                    {/* <div className="news_post_link">
+                      <a href="#">Read More</a>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Sidebar --> */}
+            <div className="col-lg-4">
+              <div className="sidebar">
+                <div className="sidebar_search"></div>
+
+                {/* blog start */}
+                <div className="sidebar_latest_posts courseDetail">
+                  {/* <div className="sidebar_title">Latest Posts</div> */}
+                  <div className="latest_posts">
+                    <h2 className="section-title-underline mb-5">
+                      <span>Course Details</span>
+                    </h2>
+
+                    <p>
+                      <strong className="text-black d-block">Teacher:</strong>
+                      <p>professor Ashvin Gudsurkar</p>
+                      <p>professor Deepali Nargunde</p>
+                      <p>professor Prasad kulkarni</p>
+                      <p>professor Dipak Kumar</p>
+                    </p>
+                    <p className="mb-5">
+                      <strong className="text-black d-block">Hours:</strong>{" "}
+                      Time - 10 am to 8 PM
+                    </p>
+                    {/* <p>
+                    11th and 12th grades are a critical phase in a student's education, especially for those pursuing science streams, as they provide the foundation for higher education and careers in science and technology.
+                    </p>
+                    <p>
+                    Students typically choose between science streams such as Physics, Chemistry, Biology (PCB), or Physics, Chemistry, Mathematics (PCM).
+                    </p> */}
+
+
+                    {/* <ul className="ul-check primary list-unstyled mb-5">
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        11th 12th regular batch
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Physics{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Chemistry
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                      Mathematics
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        Biology
+                      </li>
+
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        English
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        IT
+                      </li>
+
+
+              
                       <li>
                         {" "}
                         <i
@@ -218,11 +319,11 @@ const ElevenTwelveScience = () => {
                           </i>{" "}
                         MCQ pattern prepration
                       </li>
-                      {/* cet ends */}
+                      
 
 
 
-                    </ul>
+                    </ul> */}
 
                     <p>
                       <Link to="/admission_form">

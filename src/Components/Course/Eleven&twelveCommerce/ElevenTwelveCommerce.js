@@ -89,13 +89,16 @@ const ElevenTwelveCommerce = () => {
 
 
 
-<ul className="ul-check primary list-unstyled mb-5">
+                    <ul className="ul-check primary list-unstyled mb-5">
+                      <li> <strong>11th & 12th Commerce</strong></li>
                       <li>
+                        
                         {" "}
                         <i
                           className="fa fa-angle-right Arrow"
                           aria-hidden="true"
                         ></i>{" "}
+                       
                         11th abd 12th Regular Batch
                       </li>
                       <li>
@@ -130,6 +133,49 @@ const ElevenTwelveCommerce = () => {
                         ></i>{" "}
                         Study Materials{" "}
                       </li>
+                 
+                 <li>
+                 <strong>11th & 12th Commerce (Integrated Batch + CA/CSCMA Foundation)</strong>
+                 </li>
+
+                 <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Daily 8hrs Classes
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        All Subjects for 11th & 12th Commerce + CA/CS/CMA Foundation Batch of 20 Student
+                      </li>
+
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        More then Batch  [6 AM To 6 PM]
+                      </li>
+                      <li><strong>Revision Batch </strong></li>
+
+                      <li>(De Dhakka) Batch</li>
+
+                      <li><strong>11th & 12th + JEE/NEET </strong></li>
+                      <li>All Subject</li>
+                      <li>MCQ Pattern + Numerical Value Questions</li>
+                
+                 
+                 
+                 
                     </ul>
 
 
@@ -213,7 +259,7 @@ const ElevenTwelveCommerce = () => {
                     Students in the commerce stream develop skills in financial management, accounting, business principles, and economic analysis.
                     </p> */}
 
-                    <ul className="ul-check primary list-unstyled mb-5">
+                    {/* <ul className="ul-check primary list-unstyled mb-5">
                       <li>
                         {" "}
                         <i
@@ -254,7 +300,7 @@ const ElevenTwelveCommerce = () => {
                         ></i>{" "}
                         Study Materials{" "}
                       </li>
-                    </ul>
+                    </ul> */}
 
                     <p>
                       <Link to="/admission_form">

@@ -84,6 +84,183 @@ const CA_CMA = () => {
                   
         </div>
         <hr />
+           
+
+
+
+
+
+        <div className="news_post_text">
+                      {/* <p>
+                        {" "}
+                        Science Is an Academic Branch That Focuses on
+                        Discovering New Concepts and Technologies. After 12th
+                        Students Opt for This Branch, Many Courses Are Available
+                        in This Field. Those Interested in This Major Must
+                        Devote Extra Hours to Understand the Base of the
+                        Different Subjects. the Best Way to Learn Complex Topics
+                        in Science Is to Enroll in Tutorials for Classes XI &
+                        XII Science in Steps Academy Coaching Classes in Pimpri-
+                        Chinchwad. We Ensure That Students Understand Difficult
+                        Concepts and Prepare Them Well for the Board
+                        Examination.
+                      </p>
+                      <p>
+                        The Coaching Classes Fee Includes Study Material,
+                        Including Practice Question Papers to Help Students
+                        Prepare for Their Exams. In Addition, Science Coaching
+                        Classes Have Different Teaching Styles and Offer Special
+                        Coaching for Competitive Exams. We Also Provide Complete
+                        Training to Students to Ace Their Examinations. The
+                        Science Classes Offered by Us Will Help You to Prepare
+                        for the Exam with Ease. The Tuitions Are a Perfect
+                        Choice for All Those Who Want to Excel in Their
+                        Competitive Examinations.
+                      </p> */}
+
+
+               <ul className="ul-check primary list-unstyled mb-5">
+                <li>
+                  <strong>CA Foundation</strong>
+                </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  1 - Accounting
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  2 - Business Law
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  3 - Quantitative
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                      Paper  4 - Business Economics
+                      </li>
+                     
+
+
+                     
+                      <li><strong>CA INTER</strong></li>
+                       {/* cet ponts start */}
+                       <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        Group 1
+                      </li>
+
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        Group 2
+                      </li>
+
+
+
+
+
+
+
+
+                      <li><strong>CMA Foundation</strong></li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  1 - Accounting
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  2 - Business Law
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                        Paper  3 - Quantitative
+                      </li>
+                      <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        ></i>{" "}
+                      Paper  4 - Business Economics
+                      </li>
+
+
+
+
+
+                      <li><strong>CMA INTER</strong></li>
+                       {/* cet ponts start */}
+                       <li>
+                        {" "}
+                        <i
+                          className="fa fa-angle-right Arrow"
+                          aria-hidden="true"
+                        >
+                          </i>{" "}
+                        CA Foundation & CA INTER Content
+                      </li>
+                      {/*  */}
+                       
+                         
+
+
+
+                      
+
+
+                    </ul>
+
+
+
+
+                    </div>
+                   
+
+
+
+
+
+
+
+
         <h5>CA Foundation Examination Complete Course Guide</h5>
         <p>CA Foundation is an entry-level exam designed for students who want to pursue the CA Course. CA Foundation is a part of the revised scheme introduced by the ICAI. Exams for the CA Foundation will be conducted twice in a year i.e. in May and November.  A student after passing the 10th examination can register for the CA Foundation course but can appear only after 12th exam. There are overall 4 subjects in CA FOUNDATION exam out of which 2 are subjective and 2 are objective-based. The complete CA Course is of 4.5 years duration and after clearing CA FOUNDATION exam, CA INTERMEDIATE, ARTICLESHIP AND CA FINAL is to be completed.</p>
 
