@@ -10,35 +10,72 @@ const RegistrationForm = () => {
 
 
 
-	const registrationdata = {fname:"",lname:"",mobile:"",  emailId:""}
-	const [registrationuserData,setRegistrationUserData]=useState(registrationdata)
-
+	const registrationdata = { fname: '', lname: '', mobile: '', emailId: '' };
+	const [registrationuserData, setRegistrationUserData] = useState(registrationdata);
+	const [errors, setErrors] = useState({});
+  
 	const resetForm = () => {
-		setRegistrationUserData(registrationdata); // Reset the registrationuserData state to its initial empty state
-	  };
-	  
-
-	const handleRegistrationData = (e)=>{
-		setRegistrationUserData({...registrationuserData,[e.target.name]:e.target.value})
-	}
-	const saveRegistration=(e)=>{
-		e.preventDefault()
-	 axios.post("/user/addUser",registrationuserData)
-		.then((res)=>{
+	  setRegistrationUserData(registrationdata);
+	  setErrors({});
+	};
+  
+	const handleRegistrationData = (e) => {
+	  setRegistrationUserData({ ...registrationuserData, [e.target.name]: e.target.value });
+	  // Clear error for the current field when it's being edited
+	  setErrors({ ...errors, [e.target.name]: '' });
+	};
+  
+	const validateForm = () => {
+	  let isValid = true;
+	  const newErrors = {};
+  
+	  // Validate First Name
+	  if (!registrationuserData.fname.trim()) {
+		newErrors.fname = 'First Name is required';
+		isValid = false;
+	  }
+  
+	  // Validate Last Name
+	  if (!registrationuserData.lname.trim()) {
+		newErrors.lname = 'Last Name is required';
+		isValid = false;
+	  }
+  
+	  // Validate Mobile
+	  if (!registrationuserData.mobile.trim()) {
+		newErrors.mobile = 'Mobile Number is required';
+		isValid = false;
+	  }
+  
+	  // Validate Email
+	  if (!registrationuserData.emailId.trim()) {
+		newErrors.emailId = 'Email is required';
+		isValid = false;
+	  }
+  
+	  setErrors(newErrors);
+	  return isValid;
+	};
+  
+	const saveRegistration = (e) => {
+	  e.preventDefault();
+  
+	  if (validateForm()) {
+		axios
+		  .post('/user/addUser', registrationuserData)
+		  .then((res) => {
 			console.log(res);
-			// console.log(registrationuserData.name)
-	
+  
 			if (res.status === 200) {
-				// Reset the form data after a successful submission
-				resetForm();
-				alert("Registration successfull")
-			  }
-
-		})
-		.catch((err)=>{
-          console.log("This is the error",err);
-		})
-	}
+			  resetForm();
+			  alert('Registration successful');
+			}
+		  })
+		  .catch((err) => {
+			console.log('This is the error', err);
+		  });
+	  }
+	};
 
 
 
@@ -66,10 +103,50 @@ const RegistrationForm = () => {
 										</div> */}
 									</div>
 								</div>
-								<div><input type="text" onChange={handleRegistrationData} value={registrationuserData.fname} className="contact_input formInputs registrationInputFields" placeholder="Enetr Your First Name" name='fname'/></div>
-								<div><input type="text" onChange={handleRegistrationData} value={registrationuserData.lname} className="contact_input formInputs registrationInputFields" placeholder="Enetr Your Last Name" name='lname' /></div>
-                                <div><input type="number" onChange={handleRegistrationData} value={registrationuserData.mobile} className="contact_input formInputs registrationInputFields" placeholder="Enetr Your Phone Number" name='mobile'/></div>
-								<div><input type="email" onChange={handleRegistrationData} value={registrationuserData.emailId} className="contact_input formInputs registrationInputFields" placeholder="Enetr Your email" name='emailId'/></div>
+								<div><input type="text" 
+								onChange={handleRegistrationData} 
+								value={registrationuserData.fname} 
+								className="contact_input formInputs registrationInputFields"
+								 placeholder="Enetr Your First Name" 
+								 name='fname'
+								 />
+								 {errors.fname && <div className="error">{errors.fname}</div>}
+								 </div>
+								
+								
+								
+								<div><input type="text"
+								 onChange={handleRegistrationData} 
+								 value={registrationuserData.lname}
+								  className="contact_input formInputs registrationInputFields"
+								   placeholder="Enetr Your Last Name"
+								    name='lname' 
+									/>
+									 {errors.lname && <div className="error">{errors.lname}</div>}
+									</div>
+                               
+							   
+							   
+							    <div><input type="number"
+								 onChange={handleRegistrationData}
+								  value={registrationuserData.mobile} 
+								  className="contact_input formInputs registrationInputFields"
+								   placeholder="Enetr Your Phone Number"
+								    name='mobile'
+									/>
+									 {errors.mobile && <div className="error">{errors.mobile}</div>}
+									</div>
+								
+								
+								<div><input type="email"
+								 onChange={handleRegistrationData} 
+								 value={registrationuserData.emailId}
+								  className="contact_input formInputs registrationInputFields" 
+								  placeholder="Enetr Your email"
+								   name='emailId'
+								   />
+								   {errors.emailId && <div className="error">{errors.emailId}</div>}
+								   </div>
 								<button className="contact_button" onClick={saveRegistration}><span>send message</span><span className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></span></button>
 							</form>
 						</div>
