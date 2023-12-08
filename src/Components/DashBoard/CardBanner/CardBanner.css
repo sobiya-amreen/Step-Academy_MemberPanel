@@ -24,13 +24,38 @@
     background-color: red;
 }
 @media screen and (max-width: 768px) {
-    .courses{
-       /* width: 350px; */
-    
+    .milestones_container{
+      margin-left: 5rem;
     }
-    .profileCarousel{
-        width: 750px;
-        margin-left: 40px;
-        
+    .milestones_container {
+        position: inherit;
+        left: -1%;
     }
-}
+    .grouped_sections {
+        width: 100%;
+        background: #FFFFFF;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        /* text-align: right; */
+        margin-left: -50px;
+    }
+    .Highlights {
+        text-align: left;
+        margin-left: 70px;
+    }
+    .copyright {
+        font-size: 12px;
+        font-weight: 500;
+        color: #b3b3b3;
+        margin-top: 43px;
+        position: absolute;
+        top: 85rem;
+    }
+   
+    }
+
+
+
+
+
+
