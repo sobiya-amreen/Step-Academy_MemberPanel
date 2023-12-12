@@ -209,6 +209,7 @@ const EnquiryForm = () => {
       </div>
 
       {/* form end */}
+      {/*  */}
 
       <Footer />
     </div>
