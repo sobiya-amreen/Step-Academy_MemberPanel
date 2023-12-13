@@ -57,25 +57,7 @@ const Header = () => {
 
                                         </ul>
 
-                                        {/* <div className="top_bar_login ml-auto"> */}
-                                        {/* <ul className='logoo '> */}
-                                            {/* <Link to='/registration'> <li className='formLinks'>Register</li></Link> <span  className='slash'>/</span>
-                                      <Link to='/login'> <li  className='formLinks'>Login</li></Link>  */}
-
-                                            {/* <div>
-                                               <img className='whtsp alignright blink' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png'/>
-                                            </div> */}
-
-                                            {/* <div className='butt'>
-                                               
-                                                <br />
-                                                <br/> 
-                                                <a href="https://wa.me/918329387441" target="_blank" className='immg blink' >Join our whatsapp group</a>
-                                                <div className='blink '>Join Now</div>
-                                            </div> */}
-
-                                        {/* </ul> */}
-
+                                     
 
                                         <div>
                                         <li className='icons'>

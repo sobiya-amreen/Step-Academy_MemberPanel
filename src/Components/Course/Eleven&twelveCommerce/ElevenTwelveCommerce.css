@@ -33,3 +33,12 @@
 
     background-image: url(https://capslearning.org/assets/images/blogs/all-about-Std-11th&Std-12th-Commerce.jpeg);
 }
+
+
+@media screen and (max-width: 600px) {
+    .news_post_text {
+      /* Adjust styles for small screens */
+      position: relative;
+      top: 40px;
+    }
+  }

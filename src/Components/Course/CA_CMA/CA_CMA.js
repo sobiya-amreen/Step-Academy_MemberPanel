@@ -3,6 +3,7 @@ import Footer from "../../DashBoard/Footer/Footer";
 import ResponsiveMenu from "../../DashBoard/ResponsiveMenu/ResponsiveMenu";
 import Header from "../../DashBoard/Header/Header";
 import { Link } from "react-router-dom";
+import Table from 'react-bootstrap/Table';
 import './CA_CMA.css'
 const CA_CMA = () => {
   return (
@@ -69,7 +70,7 @@ const CA_CMA = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -80,7 +81,7 @@ const CA_CMA = () => {
                     <p>
                       
                       professor Savita Jadhav
-                    </p>
+                    </p> */}
                   
         </div>
         <hr />
@@ -309,7 +310,7 @@ const CA_CMA = () => {
 
         </p>
 
-        <table >
+        <Table  striped bordered hover size="sm">
 
           <tr>
             <th> S.No.</th>
@@ -354,7 +355,7 @@ const CA_CMA = () => {
 
 
           </tr>
-        </table>
+        </Table>
 
         <p>Once the above registration process is completed the Study Material will be dispatch to the candidates through the Centralised Dispatch System (CDS).</p>
 
@@ -372,7 +373,7 @@ const CA_CMA = () => {
         </p>
 
 
-        <table >
+        <Table  striped bordered hover size="sm">
           <tr>
             <th>CLASS</th>
             <th>BATCH</th>
@@ -394,7 +395,7 @@ const CA_CMA = () => {
             <td>1CA FOUNDATION</td>
 
           </tr>
-        </table>
+        </Table>
 
         <p>A student can join any of the above batches for preparation of CA foundation exam. It is suggested for a student to start the preparation at the earliest so that a strong foundation can be built up which is much needed for CA course and to crack the CA exams with good marks.</p>
 

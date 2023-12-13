@@ -144,7 +144,7 @@ const Bcom_BBA_BCA = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -155,7 +155,7 @@ const Bcom_BBA_BCA = () => {
                     <p>
                       
                       professor Savita Jadhav
-                    </p>
+                    </p> */}
                   
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}

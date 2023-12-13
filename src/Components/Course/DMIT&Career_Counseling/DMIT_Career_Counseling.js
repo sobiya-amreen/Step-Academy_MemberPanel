@@ -122,7 +122,7 @@ const DMIT_Career_Counseling = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -133,7 +133,7 @@ const DMIT_Career_Counseling = () => {
                     <p>
                       
                       professor Savita Jadhav
-                    </p>
+                    </p> */}
                   
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}

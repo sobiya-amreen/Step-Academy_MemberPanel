@@ -4,18 +4,28 @@ import { Link } from 'react-router-dom'
 import DMIT_Career_Counseling from '../../Course/DMIT&Career_Counseling/DMIT_Career_Counseling'
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import Header from '../Header/Header';
 
 
 const Navigation = () => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
+    
 
 
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
+
+   
     return (
         <div>
+
+    
+ 
+
+
+            {/* <Header/> */}
             {/* <!-- Header Content --> */}
             <div className="header_container">
                 <div className="container">
