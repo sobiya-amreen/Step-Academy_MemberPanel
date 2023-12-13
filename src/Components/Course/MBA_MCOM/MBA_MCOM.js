@@ -113,7 +113,7 @@ const MBA_MCOM = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -124,7 +124,7 @@ const MBA_MCOM = () => {
                     <p>
                       
                       professor Savita Jadhav
-                    </p>
+                    </p> */}
                   
                         <p className="mb-5"><strong className="text-black d-block">Hours:</strong>Time - 10 am to 8 PM</p>
                         <p>M.BA (Master of Business Administration) is a postgraduate program focused on business and management, covering areas such as finance, marketing, leadership, and strategy.</p>

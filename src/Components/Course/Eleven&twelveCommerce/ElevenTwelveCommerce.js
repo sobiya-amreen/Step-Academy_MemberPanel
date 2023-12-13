@@ -232,7 +232,7 @@ const ElevenTwelveCommerce = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -247,7 +247,7 @@ const ElevenTwelveCommerce = () => {
                     <p>
                       
                       professor Pradeep Bhawar
-                    </p>
+                    </p> */}
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}
                       Time - 10 am to 8 PM

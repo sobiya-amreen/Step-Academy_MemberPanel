@@ -130,7 +130,26 @@ const Home = () => {
             {/* <!-- Events --> */}
 
             <div className="col-lg-4 grouped_col Highlights">
-                <div className="grouped_title">Step Academy's Key Highlights</div>
+                {/* <div className="grouped_title">Step Academy's Key Highlights</div> */}
+                {/* <div className="col-lg-10 offset-lg-1"><div className="section_title text-center grouped_title whyChooseUs highlightHeading">Step Academy's Key Highlights</div></div> */}
+             
+
+                <div className="join">
+    <div className="container">
+        <div className="row">
+            <div className="col-lg-10 offset-lg-1">
+                <div className="section_title text-center"><h5 className='HighlightsHeading'>Step Academy's Key Highlights</h5></div>
+                
+            </div>
+        </div>
+    </div>
+   {/* <Link to="/registration"> <div className="button join_button"><a href="#">register now<div className="button_arrow"><i className="fa fa-angle-right" aria-hidden="true"></i></div></a></div></Link> */}
+</div>
+
+
+
+
+
                 <div className="events">
 
                     {/* <!-- Event --> */}

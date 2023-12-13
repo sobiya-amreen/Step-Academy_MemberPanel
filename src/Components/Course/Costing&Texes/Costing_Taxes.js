@@ -172,7 +172,7 @@ const Costing_Taxes = () => {
                      
                       CA Sandesh Jain
                     </p>
-                    <p>
+                    {/* <p>
                       
                       professor Ashwind Gudsurkar
                     </p>
@@ -183,7 +183,7 @@ const Costing_Taxes = () => {
                     <p>
                       
                       professor Savita Jadhav
-                    </p>
+                    </p> */}
                   
                     <p className="mb-5">
                       <strong className="text-black d-block">Hours:</strong>{" "}

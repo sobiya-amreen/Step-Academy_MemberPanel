@@ -28,3 +28,16 @@
 .Highlights{
     text-align: left;
 }
+.HighlightsHeading{
+   /* position: relative;
+   right: 10%; */
+   position: absolute;
+   right: 30px;
+   font-size: 30px;
+    font-weight: 600;
+    color: #44425a;
+   /* font-size: 1.5rem;
+   font-weight: bolder; */
+
+   /* color: red; */
+}
