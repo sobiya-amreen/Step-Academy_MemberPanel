@@ -41,7 +41,7 @@ const Header = () => {
                                                     <i class="fa fa-envelope emailIcon" aria-hidden="true"></i>
                                                 </li>
                                                 <li>
-                                                    <div>stepsacademy2129@gmail.com</div>
+                                                    <div className='emailId'>stepsacademy2129@gmail.com</div>
                                                 </li>
                                             </div>
 
@@ -59,7 +59,7 @@ const Header = () => {
 
                                      
 
-                                        <div>
+                                        <div className='whatsUpDiv'>
                                         <li className='icons'>
 
 

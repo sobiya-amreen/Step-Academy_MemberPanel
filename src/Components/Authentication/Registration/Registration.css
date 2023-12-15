@@ -4,3 +4,8 @@
 .heading{
     color: #ff6600;
 }
+@media only screen and (max-width: 767px){
+    .registrationInputFields {
+        width: 67%;
+    }
+}
