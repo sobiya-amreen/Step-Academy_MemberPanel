@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 768px) {
     .formInputs{
-        width: 48%;
+        width: 76%;
     }
     .formLabel{
         color: #ff6600;
@@ -29,4 +29,12 @@
         margin-left: 28%;
         /* font-weight: bold; */
     }
+    .formLabel {
+        color: #ff6600;
+        text-align: left;
+        margin-left: 13%;
+        /* font-weight: bold; */
+    }
 }
+
+
